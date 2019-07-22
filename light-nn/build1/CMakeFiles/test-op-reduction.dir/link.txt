@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-reduction.dir/test/test-op-reduction.cc.o  -o test/test-op-reduction lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

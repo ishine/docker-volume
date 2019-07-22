@@ -1,0 +1,3 @@
+It can be compiled with the following way:
+
+g++ test.cc -I/path/to/include -L/path/to/lib -llnn -fopenmp

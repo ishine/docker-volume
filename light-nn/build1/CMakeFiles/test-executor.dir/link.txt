@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-executor.dir/test/test-executor.cc.o  -o test/test-executor lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

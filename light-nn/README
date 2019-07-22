@@ -1,0 +1,3 @@
+Before running build.sh, please read 'README' in third_party/openblas
+to generate customized openblas library for your application. In most
+cases, you can use the pre-built library.

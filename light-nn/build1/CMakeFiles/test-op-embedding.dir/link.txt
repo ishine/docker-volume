@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-embedding.dir/test/test-op-embedding.cc.o  -o test/test-op-embedding lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

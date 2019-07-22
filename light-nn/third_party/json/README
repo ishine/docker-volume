@@ -1,0 +1,7 @@
+Version: 0.10.6
+
+This is the last version which can be compiled without using C++11.
+
+For more infomation, please refer to the following url:
+
+https://github.com/open-source-parsers/jsoncpp

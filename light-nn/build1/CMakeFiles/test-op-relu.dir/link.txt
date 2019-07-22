@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-relu.dir/test/test-op-relu.cc.o  -o test/test-op-relu lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

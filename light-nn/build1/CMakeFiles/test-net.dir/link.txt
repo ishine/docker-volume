@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-net.dir/test/test-net.cc.o  -o test/test-net lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

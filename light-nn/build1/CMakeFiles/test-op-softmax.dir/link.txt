@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-softmax.dir/test/test-op-softmax.cc.o  -o test/test-op-softmax lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

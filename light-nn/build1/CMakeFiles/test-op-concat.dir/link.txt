@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-concat.dir/test/test-op-concat.cc.o  -o test/test-op-concat lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

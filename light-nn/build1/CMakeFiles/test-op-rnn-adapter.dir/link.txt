@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-rnn-adapter.dir/test/test-op-rnn-adapter.cc.o  -o test/test-op-rnn-adapter lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

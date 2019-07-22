@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-tensor.dir/test/test-tensor.cc.o  -o test/test-tensor lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 

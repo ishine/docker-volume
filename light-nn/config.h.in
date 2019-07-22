@@ -1,0 +1,10 @@
+#ifndef LNN_CONFIG_H_
+#define LNN_CONFIG_H_
+
+#define LNN_VERSION_MAJOR @LNN_VERSION_MAJOR@
+#define LNN_VERSION_MINOR @LNN_VERSION_MINOR@
+
+#cmakedefine DEBUG
+#cmakedefine USE_OPENMP
+
+#endif  // LNN_CONFIG_H_

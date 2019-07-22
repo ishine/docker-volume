@@ -1,0 +1,75 @@
+{
+    "operators": [
+        {
+            "name": "embed",
+            "type": "Embedding",
+            "input": [
+                "sequence"
+            ],
+            "output": [
+                "embedding"
+            ],
+            "param": {
+                "input_size": 1000,
+                "output_size": 100
+            }
+        },
+        {
+            "name": "lstm",
+            "type": "LSTM",
+            "input": [
+                "embedding"
+            ],
+            "output": [
+                "lstm"
+            ],
+            "param": {
+                "input_size": 100,
+                "output_size": 256,
+                "bidirectional": false
+            }
+        },
+        {
+            "name": "adapter",
+            "type": "RNNAdapter",
+            "input": [
+                "lstm"
+            ],
+            "output": [
+                "feature"
+            ],
+            "param": {
+                "type": "LAST"
+            }
+        },
+        {
+            "name": "fc",
+            "type": "Linear",
+            "input": [
+                "feature"
+            ],
+            "output": [
+                "score"
+            ],
+            "param": {
+                "input_size": 256,
+                "output_size": 1,
+                "bias": true
+            }
+        },
+        {
+            "name": "prob",
+            "type": "Sigmoid",
+            "input": [
+                "score"
+            ],
+            "output": [
+                "prob"
+            ],
+            "param": {}
+        }
+    ],
+    "meta": {
+        "model_version": 1
+    }
+}

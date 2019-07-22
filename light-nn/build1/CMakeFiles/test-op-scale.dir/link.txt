@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-scale.dir/test/test-op-scale.cc.o  -o test/test-op-scale lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 
