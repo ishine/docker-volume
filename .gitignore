@@ -224,11 +224,13 @@ Studio profiler
 * .vsp 
 * .vspx 
 * .sap
-* .vs
-* .tlog
-* .json
-* .dat
-* .write.l.tlog
-* .vcxproj
-* .dir
+
+#vs file
+*.vs
+*.tlog
+*.json
+*.dat
+*.write.l.tlog
+*.vcxproj
+*.dir
 
