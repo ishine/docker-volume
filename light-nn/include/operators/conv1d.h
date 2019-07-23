@@ -9,7 +9,7 @@
 #include "operator.h"
 
 namespace lnn {
-
+//operator is class
 class Conv1D : public Operator {
  public:
   Conv1D(const Json::Value &config);

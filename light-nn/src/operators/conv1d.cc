@@ -82,14 +82,15 @@ bool Conv1D::reshape(const std::vector<Tensor *> &input,
     return false;
   }
   if (2 != input[0]->num_axes()) {
+	printf("%d\n", input[0]->num_axes());
     LOG(ERROR) << "Only support 2d input of shape T*D!" << std::endl;
     return false;
   }
   std::vector<size_t> shape;
   shape.push_back((input[0]->shape(0) + 2*m_padding - m_dilation*(m_kernel_size-1) - 1) / m_stride + 1);
   if (b_bias) {
-    m_bias_multiplier.realloc(shape);
-    lnn_set(shape[0], 1., m_bias_multiplier.data());
+    m_bias_multiplier.realloc(shape); //realloc 动态分配内存
+    lnn_set(shape[0], 1., m_bias_multiplier.data());// shape中存储数据
   }
   shape.push_back(m_output_size);
   output[0]->realloc(shape);
@@ -116,6 +117,8 @@ void Conv1D::forward_impl(const std::vector<Tensor *> &input,
   if (b_bias) {
     lnn_gemm(CblasNoTrans, CblasNoTrans, O, m_output_size, 1,
              1., m_bias_multiplier.data(), m_weights[1]->data(), 0., output[0]->data());
+	//transa, transb, m, n, k, alpha, a, lda, b,
+		//ldb, beta, c, n
   } else {
     lnn_set(output[0]->size(), 0., output[0]->data());
   }
@@ -142,5 +145,6 @@ void Conv1D::forward_impl(const std::vector<Tensor *> &input,
   dump(output, std::cout);
 #endif  // DEBUG
 }
+
 
 }  // namespace lnn
