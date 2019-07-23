@@ -225,5 +225,6 @@ Studio profiler
 * .vspx 
 * .sap
 *.vs
+*.tlog
 ££...
 
