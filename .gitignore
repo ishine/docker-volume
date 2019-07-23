@@ -226,5 +226,8 @@ Studio profiler
 * .sap
 *.vs
 *.tlog
+*.json
+*.dat
+*.write.l.tlog
 ££...
 
