@@ -234,4 +234,4 @@ dkms.conf
 *.write.l.tlog
 *.vcxproj
 *.dir
-light-nn/*
+./light-nn/*
