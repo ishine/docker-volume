@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\docker-volume\vs-light-nn\CMakeFiles\5c37ed7e60f92c0f3e4c840bc96517fb\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{96B85925-BACA-3DAC-98E4-36D5BB91F067}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

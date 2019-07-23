@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7AD0E039-D2C1-3CFC-BB12-E4F809D2ECBA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\docker-volume\vs-light-nn;D:\docker-volume\light-nn\include;D:\docker-volume\light-nn\third_party;D:\docker-volume\light-nn\third_party\openblas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\docker-volume\vs-light-nn;D:\docker-volume\light-nn\include;D:\docker-volume\light-nn\third_party;D:\docker-volume\light-nn\third_party\openblas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\docker-volume\vs-light-nn;D:\docker-volume\light-nn\include;D:\docker-volume\light-nn\third_party;D:\docker-volume\light-nn\third_party\openblas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\docker-volume\vs-light-nn;D:\docker-volume\light-nn\include;D:\docker-volume\light-nn\third_party;D:\docker-volume\light-nn\third_party\openblas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\docker-volume\light-nn\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/docker-volume/light-nn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\programfile\cmake\bin\cmake.exe -SD:/docker-volume/light-nn -BD:/docker-volume/vs-light-nn --check-stamp-file D:/docker-volume/vs-light-nn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\docker-volume\light-nn\config.h.in;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindOpenMP.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\docker-volume\vs-light-nn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/docker-volume/light-nn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\programfile\cmake\bin\cmake.exe -SD:/docker-volume/light-nn -BD:/docker-volume/vs-light-nn --check-stamp-file D:/docker-volume/vs-light-nn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\docker-volume\light-nn\config.h.in;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindOpenMP.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\docker-volume\vs-light-nn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/docker-volume/light-nn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\programfile\cmake\bin\cmake.exe -SD:/docker-volume/light-nn -BD:/docker-volume/vs-light-nn --check-stamp-file D:/docker-volume/vs-light-nn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\docker-volume\light-nn\config.h.in;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindOpenMP.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\docker-volume\vs-light-nn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/docker-volume/light-nn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\programfile\cmake\bin\cmake.exe -SD:/docker-volume/light-nn -BD:/docker-volume/vs-light-nn --check-stamp-file D:/docker-volume/vs-light-nn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\docker-volume\light-nn\config.h.in;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeCXXCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeRCCompiler.cmake;D:\docker-volume\vs-light-nn\CMakeFiles\3.15.0-rc4\CMakeSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindOpenMP.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\programfile\cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\docker-volume\vs-light-nn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\ZERO_CHECK.vcxproj">
+      <Project>{FE0345B2-BA53-3E0F-AE6C-16E61C44726A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\gtest.vcxproj">
+      <Project>{8E905E24-E3A8-398C-BC5D-251B57277E3B}</Project>
+      <Name>gtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\lnn.vcxproj">
+      <Project>{6AA71125-14EE-396E-9725-D8ACD52CA285}</Project>
+      <Name>lnn</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-all.vcxproj">
+      <Project>{966B94B1-99AF-36CD-BFC1-3AA869790C93}</Project>
+      <Name>test-all</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-executor.vcxproj">
+      <Project>{B4D5B073-111B-3A02-B70D-FFD8DBA5118E}</Project>
+      <Name>test-executor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-net.vcxproj">
+      <Project>{44D8C8EE-0BDB-3ECB-BE71-6D6081FB1652}</Project>
+      <Name>test-net</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-attention.vcxproj">
+      <Project>{F6978E40-712D-3B1C-8070-E23AF926ADF8}</Project>
+      <Name>test-op-attention</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-concat.vcxproj">
+      <Project>{6CCB83BC-D6E7-397B-9244-9A73515AF85D}</Project>
+      <Name>test-op-concat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-conv1d.vcxproj">
+      <Project>{A49AED21-15F1-3D86-926E-97D8986455FC}</Project>
+      <Name>test-op-conv1d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-crf.vcxproj">
+      <Project>{424548FA-BF5C-3611-849D-EECE51834FCB}</Project>
+      <Name>test-op-crf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-eltwise.vcxproj">
+      <Project>{2A3F6382-FAC5-3AA3-9877-796AD24CE7A9}</Project>
+      <Name>test-op-eltwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-embedding.vcxproj">
+      <Project>{8E86500C-8349-32A6-8467-B88CA6D83A0A}</Project>
+      <Name>test-op-embedding</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-gelu.vcxproj">
+      <Project>{DB34DBC7-14C7-3353-8F71-CBF7D03C050D}</Project>
+      <Name>test-op-gelu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-gru.vcxproj">
+      <Project>{835EF662-F1BB-3395-A533-5BF54B9047EB}</Project>
+      <Name>test-op-gru</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-linear.vcxproj">
+      <Project>{C3B1BFD4-DBE5-3916-8675-C09EF4F28F54}</Project>
+      <Name>test-op-linear</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-lookup-table.vcxproj">
+      <Project>{B0F44662-1705-3D9B-99EB-57C252285788}</Project>
+      <Name>test-op-lookup-table</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-lstm.vcxproj">
+      <Project>{B7E5987B-1280-317B-BCDE-F367AA11E824}</Project>
+      <Name>test-op-lstm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-pooling1d.vcxproj">
+      <Project>{7612A6E8-B8DA-3A6A-ABD4-CFB9B0FD05D8}</Project>
+      <Name>test-op-pooling1d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-reduction.vcxproj">
+      <Project>{54AD5F26-CBAF-346A-BBC9-436EE3ECD119}</Project>
+      <Name>test-op-reduction</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-relu.vcxproj">
+      <Project>{4DB2658D-AC62-3A30-BA18-BCA4E97FB2C0}</Project>
+      <Name>test-op-relu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-reverse.vcxproj">
+      <Project>{D9113553-AF19-3411-8D21-1078EE8F611E}</Project>
+      <Name>test-op-reverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-rnn-adapter.vcxproj">
+      <Project>{87401E5E-2FEC-3AB7-BA30-15C9FF6A2348}</Project>
+      <Name>test-op-rnn-adapter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-scale.vcxproj">
+      <Project>{ACDD186B-BC72-3CAB-807A-89E0A22546BD}</Project>
+      <Name>test-op-scale</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-sigmoid.vcxproj">
+      <Project>{019398BE-7ADE-369F-8318-A343B142CD03}</Project>
+      <Name>test-op-sigmoid</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-softmax.vcxproj">
+      <Project>{017FC065-D4EE-321D-9C28-DCBEB8309C0A}</Project>
+      <Name>test-op-softmax</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-tanh.vcxproj">
+      <Project>{AFF18341-2443-3F33-B9AB-E48BE4A79972}</Project>
+      <Name>test-op-tanh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-weight-wrapper.vcxproj">
+      <Project>{08908E03-DF9F-3322-8D3C-F42387F0AF34}</Project>
+      <Name>test-op-weight-wrapper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-op-weighted-sum.vcxproj">
+      <Project>{26736674-24EA-35F3-AE0E-EC0E5098BEC8}</Project>
+      <Name>test-op-weighted-sum</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\docker-volume\vs-light-nn\test-tensor.vcxproj">
+      <Project>{AE649664-E04F-33E3-BC75-190EB32FCA0A}</Project>
+      <Name>test-tensor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
