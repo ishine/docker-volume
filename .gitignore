@@ -224,11 +224,11 @@ Studio profiler
 * .vsp 
 * .vspx 
 * .sap
-*.vs
-*.tlog
-*.json
-*.dat
-*.write.l.tlog
-/vs-light-nn/x64/*
-*.vcxproj
+* .vs
+* .tlog
+* .json
+* .dat
+* .write.l.tlog
+* .vcxproj
+* .dir
 
