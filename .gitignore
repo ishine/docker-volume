@@ -229,5 +229,7 @@ Studio profiler
 *.json
 *.dat
 *.write.l.tlog
+*x64
+*.vcxproj
 ££...
 
