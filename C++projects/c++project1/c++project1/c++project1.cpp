@@ -1,57 +1,117 @@
-﻿// c++project1.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿//cblas加速二维矩阵卷积操作
+//注意：默认pad=0，stride=1
+//作者：samylee
 
-#include "pch.h"
+#include <cblas.h>  
 #include <iostream>
+
 using namespace std;
 
-//有参的构造方法,类属性length，类方法set_length，get_length
-class Line
+int main()
 {
-public:
-	void SetLength(double len);
-	double GetLength();
-	Line(double len);
-	~Line();
-private:
-	double length;
-};
-//成员函数定义
-void Line::SetLength(double len)
-{
-	length = len;
-}
+	//定义被卷积矩阵
+	const int Map = 8;
+	const float A[Map * Map] = {
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8,
+		1,2,3,4,5,6,7,8 };
 
-double Line::GetLength()
-{
-	return length;
-}
+	//定义卷积核
+	const int Kernel = 3;
+	const float B[Kernel * Kernel] = {
+		1,1,1,
+		1,1,1,
+		1,1,1 };
 
-//构造函数初始化
-Line::Line(double len):length(len)
-{
-	cout << "Object is being created" << endl;
-	//length = len;
-}
-Line::~Line()
-{
-	cout << "Object is being deleted" << endl;
-}
-int main() {
-	Line line(10.0);
-	cout << line.GetLength() << endl;
-	line.SetLength(6.0);
-	cout << line.GetLength() << endl;
-	return 0;
-}
+	//计算卷积输出矩阵宽高
+	const int outM = Map - Kernel + 1;
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
+	//定义被卷积矩阵宽高
+	const int convAw = Kernel * Kernel;
+	const int convAh = outM * outM;
 
-// 入门提示: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
+	//转换被卷积矩阵
+	float A_convert[convAh*convAw] = { 0 };
+	for (int i = 0; i < outM; i++)
+	{
+		for (int j = 0; j < outM; j++)
+		{
+			int wh = i * outM * convAw + j * convAw;
+
+			int col1 = i * Map + j;
+			A_convert[wh] = A[col1];
+			A_convert[wh + 1] = A[col1 + 1];
+			A_convert[wh + 2] = A[col1 + 2];
+
+			int col2 = (i + 1) * Map + j;
+			A_convert[wh + 3] = A[col2];
+			A_convert[wh + 4] = A[col2 + 1];
+			A_convert[wh + 5] = A[col2 + 2];
+
+			int col3 = (i + 2) * Map + j;
+			A_convert[wh + 6] = A[col3];
+			A_convert[wh + 7] = A[col3 + 1];
+			A_convert[wh + 8] = A[col3 + 2];
+		}
+	}
+
+	//定义cblas初始值
+	const enum CBLAS_ORDER Order = CblasRowMajor;
+	const enum CBLAS_TRANSPOSE TransA = CblasNoTrans;
+	const enum CBLAS_TRANSPOSE TransB = CblasNoTrans;
+	const int M = convAh;//A的行数，C的行数
+	const int N = 1;//B的列数，C的列数
+	const int K = convAw;//A的列数，B的行数
+	const float alpha = 1;
+	const float beta = 0;
+	const int lda = K;//A的列
+	const int ldb = N;//B的列
+	const int ldc = N;//C的列
+
+	//定义卷积输出矩阵
+	float C[M*N];
+	//cblas计算输出矩阵
+	cblas_sgemm(Order, TransA, TransB, M, N, K, alpha, A_convert, lda, B, ldb, beta, C, ldc);
+
+	//输出验证
+	cout << "A is:" << endl;
+	for (int i = 0; i < Map; i++)
+	{
+		for (int j = 0; j < Map; j++)
+		{
+			cout << A[i*Map + j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	cout << "B is:" << endl;
+	for (int i = 0; i < Kernel; i++)
+	{
+		for (int j = 0; j < Kernel; j++)
+		{
+			cout << B[i*Kernel + j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	cout << "C is:" << endl;
+	for (int i = 0; i < outM; i++)
+	{
+		for (int j = 0; j < outM; j++)
+		{
+			cout << C[i*outM + j] << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	system("pause");
+	return EXIT_SUCCESS;
+}
