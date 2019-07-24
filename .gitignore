@@ -1,2 +1,5 @@
- C++projects/c++project1/c++project1/x64/Debug/*.tlog
- *.log
+/*
+#除src文件夹外
+!/vs-light-nn/owntest
+#除bin文件夹外
+!/C++projects 
