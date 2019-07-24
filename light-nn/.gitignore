@@ -1,0 +1,9 @@
+.svn/
+.git/
+*.vs
+*.tlog
+*.json
+*.dat
+*.tlog
+*.vcxproj
+*.dir
