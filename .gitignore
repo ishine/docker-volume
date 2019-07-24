@@ -231,7 +231,7 @@ dkms.conf
 *.tlog
 *.json
 *.dat
-*.write.l.tlog
+*.tlog
 *.vcxproj
 *.dir
 ./light-nn/*
