@@ -27,6 +27,7 @@ void Tensor::set_data(float *data, size_t num_element) {
   m_num_element = num_element;
 }
 
+//shape 的维度>1时，m_num_element是总的元素个数
 void Tensor::set_data(float *data, const std::vector<size_t> &shape) {
   m_data = data;
   m_shape = shape;
@@ -100,6 +101,11 @@ void Tensor::dump(std::ostream &ofs, bool is_float) {
     else ofs << int(data()[i]);
   }
   ofs << std::endl;
+}
+
+void Tensor::get_data(float *data)
+{
+	data = m_data;
 }
 
 }  // namespace lnn

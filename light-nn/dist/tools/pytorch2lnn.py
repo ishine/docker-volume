@@ -61,7 +61,7 @@ def length_normalize(tensor_name, op_name):
     # more than 32, cut it to be 31 (1 for \0)
     need2cut = len(tensor_name) - 31
     res = op_name[:-need2cut] + tensor_name[len(op_name):]
-    print "[WARNING] length >= 32, cut tensor_name & op_name!"
+    print( "[WARNING] length >= 32, cut tensor_name & op_name!")
     return res.ljust(32, '\0'), op_name[:-need2cut]
 
 def format_name(name, is_lstm):
@@ -92,13 +92,13 @@ def format_name(name, is_lstm):
 
 
 if len(sys.argv) != 3:
-  print "usage: {} pytorch_model_file lnn_weight_file".format(sys.argv[0])
+  print( "usage: {} pytorch_model_file lnn_weight_file".format(sys.argv[0]))
   sys.exit()
 
 model_path = sys.argv[1]
 res_path = sys.argv[2]
 model = torch.load(model_path, map_location=lambda storage, loc : storage)
-print type(model)
+print(type(model))
 
 if isinstance(model, OrderedDict):
   dict = model
@@ -124,13 +124,13 @@ for k, v in dict.items():
   if is_rnn_tensor(k):
     is_lstm_tensor(v, get_op_name(k), get_suffix_name(k))
 
-print is_lstm_op
+print(is_lstm_op)
 
 for k, v in dict.items():
   if k in filter_tensor_name:
-    print "filter tensor: {}".format(k)
+    print( "filter tensor: {}".format(k))
     continue
-  print "orig_tensor_name: {}".format(k)
+  print("orig_tensor_name: {}".format(k))
   if k in crf_tensor_name:
     crf_tensor.append(v)
     continue
@@ -150,7 +150,7 @@ for k, v in dict.items():
       tensor.append(torch.transpose(v, 1, 2))
     else:
       tensor.append(v)
-print
+print()
 # merge bias_ih & bias_hh for lstm
 for i in range(0, len(bias_name), 2):
   tensor_name.append(bias_name[i])
@@ -165,7 +165,7 @@ if len(crf_tensor) > 1:
   is_rnn.append(False)
   is_lstm.append(False)
 
-print "#tensor: {}".format(len(tensor_name))
+print( "#tensor: {}".format(len(tensor_name)))
 
 f = file(res_path, 'wb')
 
@@ -183,14 +183,14 @@ for i in range(len(tensor)):
   if "feature_embed.weights" == tensor_name[i]:
     tensor_name[i] = "feature_embed.weight"
   op_name = get_op_name(tensor_name[i])
-  print "tensor_{} (of operator [{}]): \torig_name: {}\tshape: {}".format(i, op_name, tensor_name[i], tensor[i].size())
+  print("tensor_{} (of operator [{}]): \torig_name: {}\tshape: {}".format(i, op_name, tensor_name[i], tensor[i].size()))
   name, op_name = format_name(tensor_name[i], is_lstm[i])
   if not op_name in ops:
     ops.append(op_name)
   for j in range(len(name)):
     name_arr.append(name[j])
   tensor_i = tensor[i].numpy().flatten().tolist()
-  print "\t(of operator [{}])\tfinal_name: {}\tsize: {}\tis_rnn: {}\tis_lstm: {}\n".format(op_name, name, len(tensor_i), is_rnn[i], is_lstm[i])
+  print( "\t(of operator [{}])\tfinal_name: {}\tsize: {}\tis_rnn: {}\tis_lstm: {}\n".format(op_name, name, len(tensor_i), is_rnn[i], is_lstm[i]))
   size_arr.append(len(tensor_i))
   # transform i|f|g|o to i|f|o|g for lstm
   if True == is_lstm[i]:
@@ -202,14 +202,14 @@ for i in range(len(tensor)):
     val_arr.fromlist(tensor_i)
 #  for j in range(len(tensor_i)):
 #    if j != len(tensor_i) - 1:
-#      print "%.6f" % tensor_i[j],
+#      print( "%.6f" % tensor_i[j],)
 #    else:
-#      print "%.6f" % tensor_i[j]
-#print
+#      print("%.6f" % tensor_i[j])
+#print((
 
-print "#operator: {}".format(len(ops))
+print( "#operator: {}".format(len(ops)))
 for i in range(len(ops)):
-  print ops[i]
+  print( ops[i])
 
 name_arr.tofile(f)
 size_arr.tofile(f)

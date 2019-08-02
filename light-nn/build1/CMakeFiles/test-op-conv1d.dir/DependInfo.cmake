@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/pycharm-projects/light-nn/test/test-op-conv1d.cc" "/pycharm-projects/light-nn/build1/CMakeFiles/test-op-conv1d.dir/test/test-op-conv1d.cc.o"
+  "/volume/light-nn/test/test-op-conv1d.cc" "/volume/light-nn/build1/CMakeFiles/test-op-conv1d.dir/test/test-op-conv1d.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,8 +18,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/pycharm-projects/light-nn/build1/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/pycharm-projects/light-nn/build1/CMakeFiles/lnn.dir/DependInfo.cmake"
+  "/volume/light-nn/build1/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/volume/light-nn/build1/CMakeFiles/lnn.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

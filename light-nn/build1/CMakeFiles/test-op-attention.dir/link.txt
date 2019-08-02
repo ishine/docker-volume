@@ -1,1 +1,1 @@
-/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-attention.dir/test/test-op-attention.cc.o  -o test/test-op-attention lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 
+/usr/bin/c++   -pthread  -rdynamic CMakeFiles/test-op-attention.dir/test/test-op-attention.cc.o  -o test/test-op-attention lib/libgtest.a lib/liblnn.a -lpthread lib/openblas.lib 

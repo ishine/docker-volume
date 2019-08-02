@@ -32,6 +32,7 @@ class Tensor {
   void set_shape(const std::vector<size_t> &shape) { m_shape = shape; }
   void set_data(float *data, size_t num_element);
   void set_data(float *data, const std::vector<size_t> &shape);
+  void get_data(float *data);
 
   size_t shape(int axis);
   size_t count(size_t begin_axis, size_t end_axis);

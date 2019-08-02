@@ -33,7 +33,7 @@ class Conv1D : public Operator {
   size_t m_padding;
   size_t m_dilation;
   Tensor m_bias_multiplier;
-  Tensor m_buf, m_buf_2;
+  Tensor m_buf, m_buf_2; //通过cblas_copy缓存padding后的data
 };
 
 }  // namespace lnn

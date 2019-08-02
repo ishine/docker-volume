@@ -1,1 +1,1 @@
-/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-reverse.dir/test/test-op-reverse.cc.o  -o test/test-op-reverse lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 
+/usr/bin/c++   -pthread  -rdynamic CMakeFiles/test-op-reverse.dir/test/test-op-reverse.cc.o  -o test/test-op-reverse lib/libgtest.a lib/liblnn.a -lpthread lib/openblas.lib 

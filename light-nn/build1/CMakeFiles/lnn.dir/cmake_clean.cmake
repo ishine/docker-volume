@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lnn.dir/src/operators/attention.cc.o"
   "CMakeFiles/lnn.dir/src/operators/concat.cc.o"
   "CMakeFiles/lnn.dir/src/operators/conv1d.cc.o"
+  "CMakeFiles/lnn.dir/src/operators/conv2d.cc.o"
   "CMakeFiles/lnn.dir/src/operators/crf.cc.o"
   "CMakeFiles/lnn.dir/src/operators/eltwise.cc.o"
   "CMakeFiles/lnn.dir/src/operators/embedding.cc.o"

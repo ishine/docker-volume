@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /pycharm-projects/light-nn
+CMAKE_SOURCE_DIR = /volume/light-nn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /pycharm-projects/light-nn/build1
+CMAKE_BINARY_DIR = /volume/light-nn/build1
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles /pycharm-projects/light-nn/build1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles /volume/light-nn/build1/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -608,6 +608,33 @@ src/operators/conv1d.s: src/operators/conv1d.cc.s
 src/operators/conv1d.cc.s:
 	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/src/operators/conv1d.cc.s
 .PHONY : src/operators/conv1d.cc.s
+
+src/operators/conv2d.o: src/operators/conv2d.cc.o
+
+.PHONY : src/operators/conv2d.o
+
+# target to build an object file
+src/operators/conv2d.cc.o:
+	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/src/operators/conv2d.cc.o
+.PHONY : src/operators/conv2d.cc.o
+
+src/operators/conv2d.i: src/operators/conv2d.cc.i
+
+.PHONY : src/operators/conv2d.i
+
+# target to preprocess a source file
+src/operators/conv2d.cc.i:
+	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/src/operators/conv2d.cc.i
+.PHONY : src/operators/conv2d.cc.i
+
+src/operators/conv2d.s: src/operators/conv2d.cc.s
+
+.PHONY : src/operators/conv2d.s
+
+# target to generate assembly for a file
+src/operators/conv2d.cc.s:
+	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/src/operators/conv2d.cc.s
+.PHONY : src/operators/conv2d.cc.s
 
 src/operators/crf.o: src/operators/crf.cc.o
 
@@ -2058,6 +2085,9 @@ help:
 	@echo "... src/operators/conv1d.o"
 	@echo "... src/operators/conv1d.i"
 	@echo "... src/operators/conv1d.s"
+	@echo "... src/operators/conv2d.o"
+	@echo "... src/operators/conv2d.i"
+	@echo "... src/operators/conv2d.s"
 	@echo "... src/operators/crf.o"
 	@echo "... src/operators/crf.i"
 	@echo "... src/operators/crf.s"

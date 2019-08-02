@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /pycharm-projects/light-nn
+CMAKE_SOURCE_DIR = /volume/light-nn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /pycharm-projects/light-nn/build1
+CMAKE_BINARY_DIR = /volume/light-nn/build1
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lnn.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/lnn.dir/flags.make
 
 CMakeFiles/lnn.dir/src/executor.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/executor.cc.o: ../src/executor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lnn.dir/src/executor.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/executor.cc.o -c /pycharm-projects/light-nn/src/executor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lnn.dir/src/executor.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/executor.cc.o -c /volume/light-nn/src/executor.cc
 
 CMakeFiles/lnn.dir/src/executor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/executor.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/executor.cc > CMakeFiles/lnn.dir/src/executor.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/executor.cc > CMakeFiles/lnn.dir/src/executor.cc.i
 
 CMakeFiles/lnn.dir/src/executor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/executor.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/executor.cc -o CMakeFiles/lnn.dir/src/executor.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/executor.cc -o CMakeFiles/lnn.dir/src/executor.cc.s
 
 CMakeFiles/lnn.dir/src/executor.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/lnn.dir/src/executor.cc.o.provides.build: CMakeFiles/lnn.dir/src/exec
 
 CMakeFiles/lnn.dir/src/net.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/net.cc.o: ../src/net.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lnn.dir/src/net.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/net.cc.o -c /pycharm-projects/light-nn/src/net.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lnn.dir/src/net.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/net.cc.o -c /volume/light-nn/src/net.cc
 
 CMakeFiles/lnn.dir/src/net.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/net.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/net.cc > CMakeFiles/lnn.dir/src/net.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/net.cc > CMakeFiles/lnn.dir/src/net.cc.i
 
 CMakeFiles/lnn.dir/src/net.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/net.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/net.cc -o CMakeFiles/lnn.dir/src/net.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/net.cc -o CMakeFiles/lnn.dir/src/net.cc.s
 
 CMakeFiles/lnn.dir/src/net.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/lnn.dir/src/net.cc.o.provides.build: CMakeFiles/lnn.dir/src/net.cc.o
 
 CMakeFiles/lnn.dir/src/operators/attention.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/attention.cc.o: ../src/operators/attention.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lnn.dir/src/operators/attention.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/attention.cc.o -c /pycharm-projects/light-nn/src/operators/attention.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lnn.dir/src/operators/attention.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/attention.cc.o -c /volume/light-nn/src/operators/attention.cc
 
 CMakeFiles/lnn.dir/src/operators/attention.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/attention.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/attention.cc > CMakeFiles/lnn.dir/src/operators/attention.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/attention.cc > CMakeFiles/lnn.dir/src/operators/attention.cc.i
 
 CMakeFiles/lnn.dir/src/operators/attention.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/attention.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/attention.cc -o CMakeFiles/lnn.dir/src/operators/attention.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/attention.cc -o CMakeFiles/lnn.dir/src/operators/attention.cc.s
 
 CMakeFiles/lnn.dir/src/operators/attention.cc.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/lnn.dir/src/operators/attention.cc.o.provides.build: CMakeFiles/lnn.d
 
 CMakeFiles/lnn.dir/src/operators/concat.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/concat.cc.o: ../src/operators/concat.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lnn.dir/src/operators/concat.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/concat.cc.o -c /pycharm-projects/light-nn/src/operators/concat.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lnn.dir/src/operators/concat.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/concat.cc.o -c /volume/light-nn/src/operators/concat.cc
 
 CMakeFiles/lnn.dir/src/operators/concat.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/concat.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/concat.cc > CMakeFiles/lnn.dir/src/operators/concat.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/concat.cc > CMakeFiles/lnn.dir/src/operators/concat.cc.i
 
 CMakeFiles/lnn.dir/src/operators/concat.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/concat.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/concat.cc -o CMakeFiles/lnn.dir/src/operators/concat.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/concat.cc -o CMakeFiles/lnn.dir/src/operators/concat.cc.s
 
 CMakeFiles/lnn.dir/src/operators/concat.cc.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/lnn.dir/src/operators/concat.cc.o.provides.build: CMakeFiles/lnn.dir/
 
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o: ../src/operators/conv1d.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lnn.dir/src/operators/conv1d.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/conv1d.cc.o -c /pycharm-projects/light-nn/src/operators/conv1d.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lnn.dir/src/operators/conv1d.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/conv1d.cc.o -c /volume/light-nn/src/operators/conv1d.cc
 
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/conv1d.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/conv1d.cc > CMakeFiles/lnn.dir/src/operators/conv1d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/conv1d.cc > CMakeFiles/lnn.dir/src/operators/conv1d.cc.i
 
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/conv1d.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/conv1d.cc -o CMakeFiles/lnn.dir/src/operators/conv1d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/conv1d.cc -o CMakeFiles/lnn.dir/src/operators/conv1d.cc.s
 
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o.requires:
 
@@ -177,18 +177,42 @@ CMakeFiles/lnn.dir/src/operators/conv1d.cc.o.provides: CMakeFiles/lnn.dir/src/op
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o.provides.build: CMakeFiles/lnn.dir/src/operators/conv1d.cc.o
 
 
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: CMakeFiles/lnn.dir/flags.make
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../src/operators/conv2d.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lnn.dir/src/operators/conv2d.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/conv2d.cc.o -c /volume/light-nn/src/operators/conv2d.cc
+
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/conv2d.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/conv2d.cc > CMakeFiles/lnn.dir/src/operators/conv2d.cc.i
+
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/conv2d.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/conv2d.cc -o CMakeFiles/lnn.dir/src/operators/conv2d.cc.s
+
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.requires:
+
+.PHONY : CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.requires
+
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.provides: CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.requires
+	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.provides.build
+.PHONY : CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.provides
+
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.provides.build: CMakeFiles/lnn.dir/src/operators/conv2d.cc.o
+
+
 CMakeFiles/lnn.dir/src/operators/crf.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/crf.cc.o: ../src/operators/crf.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lnn.dir/src/operators/crf.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/crf.cc.o -c /pycharm-projects/light-nn/src/operators/crf.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lnn.dir/src/operators/crf.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/crf.cc.o -c /volume/light-nn/src/operators/crf.cc
 
 CMakeFiles/lnn.dir/src/operators/crf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/crf.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/crf.cc > CMakeFiles/lnn.dir/src/operators/crf.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/crf.cc > CMakeFiles/lnn.dir/src/operators/crf.cc.i
 
 CMakeFiles/lnn.dir/src/operators/crf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/crf.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/crf.cc -o CMakeFiles/lnn.dir/src/operators/crf.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/crf.cc -o CMakeFiles/lnn.dir/src/operators/crf.cc.s
 
 CMakeFiles/lnn.dir/src/operators/crf.cc.o.requires:
 
@@ -203,16 +227,16 @@ CMakeFiles/lnn.dir/src/operators/crf.cc.o.provides.build: CMakeFiles/lnn.dir/src
 
 CMakeFiles/lnn.dir/src/operators/eltwise.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/eltwise.cc.o: ../src/operators/eltwise.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lnn.dir/src/operators/eltwise.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/eltwise.cc.o -c /pycharm-projects/light-nn/src/operators/eltwise.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lnn.dir/src/operators/eltwise.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/eltwise.cc.o -c /volume/light-nn/src/operators/eltwise.cc
 
 CMakeFiles/lnn.dir/src/operators/eltwise.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/eltwise.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/eltwise.cc > CMakeFiles/lnn.dir/src/operators/eltwise.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/eltwise.cc > CMakeFiles/lnn.dir/src/operators/eltwise.cc.i
 
 CMakeFiles/lnn.dir/src/operators/eltwise.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/eltwise.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/eltwise.cc -o CMakeFiles/lnn.dir/src/operators/eltwise.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/eltwise.cc -o CMakeFiles/lnn.dir/src/operators/eltwise.cc.s
 
 CMakeFiles/lnn.dir/src/operators/eltwise.cc.o.requires:
 
@@ -227,16 +251,16 @@ CMakeFiles/lnn.dir/src/operators/eltwise.cc.o.provides.build: CMakeFiles/lnn.dir
 
 CMakeFiles/lnn.dir/src/operators/embedding.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/embedding.cc.o: ../src/operators/embedding.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lnn.dir/src/operators/embedding.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/embedding.cc.o -c /pycharm-projects/light-nn/src/operators/embedding.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lnn.dir/src/operators/embedding.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/embedding.cc.o -c /volume/light-nn/src/operators/embedding.cc
 
 CMakeFiles/lnn.dir/src/operators/embedding.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/embedding.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/embedding.cc > CMakeFiles/lnn.dir/src/operators/embedding.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/embedding.cc > CMakeFiles/lnn.dir/src/operators/embedding.cc.i
 
 CMakeFiles/lnn.dir/src/operators/embedding.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/embedding.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/embedding.cc -o CMakeFiles/lnn.dir/src/operators/embedding.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/embedding.cc -o CMakeFiles/lnn.dir/src/operators/embedding.cc.s
 
 CMakeFiles/lnn.dir/src/operators/embedding.cc.o.requires:
 
@@ -251,16 +275,16 @@ CMakeFiles/lnn.dir/src/operators/embedding.cc.o.provides.build: CMakeFiles/lnn.d
 
 CMakeFiles/lnn.dir/src/operators/gelu.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/gelu.cc.o: ../src/operators/gelu.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lnn.dir/src/operators/gelu.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/gelu.cc.o -c /pycharm-projects/light-nn/src/operators/gelu.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lnn.dir/src/operators/gelu.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/gelu.cc.o -c /volume/light-nn/src/operators/gelu.cc
 
 CMakeFiles/lnn.dir/src/operators/gelu.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/gelu.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/gelu.cc > CMakeFiles/lnn.dir/src/operators/gelu.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/gelu.cc > CMakeFiles/lnn.dir/src/operators/gelu.cc.i
 
 CMakeFiles/lnn.dir/src/operators/gelu.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/gelu.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/gelu.cc -o CMakeFiles/lnn.dir/src/operators/gelu.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/gelu.cc -o CMakeFiles/lnn.dir/src/operators/gelu.cc.s
 
 CMakeFiles/lnn.dir/src/operators/gelu.cc.o.requires:
 
@@ -275,16 +299,16 @@ CMakeFiles/lnn.dir/src/operators/gelu.cc.o.provides.build: CMakeFiles/lnn.dir/sr
 
 CMakeFiles/lnn.dir/src/operators/gru.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/gru.cc.o: ../src/operators/gru.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lnn.dir/src/operators/gru.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/gru.cc.o -c /pycharm-projects/light-nn/src/operators/gru.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lnn.dir/src/operators/gru.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/gru.cc.o -c /volume/light-nn/src/operators/gru.cc
 
 CMakeFiles/lnn.dir/src/operators/gru.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/gru.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/gru.cc > CMakeFiles/lnn.dir/src/operators/gru.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/gru.cc > CMakeFiles/lnn.dir/src/operators/gru.cc.i
 
 CMakeFiles/lnn.dir/src/operators/gru.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/gru.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/gru.cc -o CMakeFiles/lnn.dir/src/operators/gru.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/gru.cc -o CMakeFiles/lnn.dir/src/operators/gru.cc.s
 
 CMakeFiles/lnn.dir/src/operators/gru.cc.o.requires:
 
@@ -299,16 +323,16 @@ CMakeFiles/lnn.dir/src/operators/gru.cc.o.provides.build: CMakeFiles/lnn.dir/src
 
 CMakeFiles/lnn.dir/src/operators/linear.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/linear.cc.o: ../src/operators/linear.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lnn.dir/src/operators/linear.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/linear.cc.o -c /pycharm-projects/light-nn/src/operators/linear.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lnn.dir/src/operators/linear.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/linear.cc.o -c /volume/light-nn/src/operators/linear.cc
 
 CMakeFiles/lnn.dir/src/operators/linear.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/linear.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/linear.cc > CMakeFiles/lnn.dir/src/operators/linear.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/linear.cc > CMakeFiles/lnn.dir/src/operators/linear.cc.i
 
 CMakeFiles/lnn.dir/src/operators/linear.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/linear.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/linear.cc -o CMakeFiles/lnn.dir/src/operators/linear.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/linear.cc -o CMakeFiles/lnn.dir/src/operators/linear.cc.s
 
 CMakeFiles/lnn.dir/src/operators/linear.cc.o.requires:
 
@@ -323,16 +347,16 @@ CMakeFiles/lnn.dir/src/operators/linear.cc.o.provides.build: CMakeFiles/lnn.dir/
 
 CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o: ../src/operators/lookup-table.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o -c /pycharm-projects/light-nn/src/operators/lookup-table.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o -c /volume/light-nn/src/operators/lookup-table.cc
 
 CMakeFiles/lnn.dir/src/operators/lookup-table.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/lookup-table.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/lookup-table.cc > CMakeFiles/lnn.dir/src/operators/lookup-table.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/lookup-table.cc > CMakeFiles/lnn.dir/src/operators/lookup-table.cc.i
 
 CMakeFiles/lnn.dir/src/operators/lookup-table.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/lookup-table.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/lookup-table.cc -o CMakeFiles/lnn.dir/src/operators/lookup-table.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/lookup-table.cc -o CMakeFiles/lnn.dir/src/operators/lookup-table.cc.s
 
 CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o.requires:
 
@@ -347,16 +371,16 @@ CMakeFiles/lnn.dir/src/operators/lookup-table.cc.o.provides.build: CMakeFiles/ln
 
 CMakeFiles/lnn.dir/src/operators/lstm.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/lstm.cc.o: ../src/operators/lstm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lnn.dir/src/operators/lstm.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/lstm.cc.o -c /pycharm-projects/light-nn/src/operators/lstm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lnn.dir/src/operators/lstm.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/lstm.cc.o -c /volume/light-nn/src/operators/lstm.cc
 
 CMakeFiles/lnn.dir/src/operators/lstm.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/lstm.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/lstm.cc > CMakeFiles/lnn.dir/src/operators/lstm.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/lstm.cc > CMakeFiles/lnn.dir/src/operators/lstm.cc.i
 
 CMakeFiles/lnn.dir/src/operators/lstm.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/lstm.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/lstm.cc -o CMakeFiles/lnn.dir/src/operators/lstm.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/lstm.cc -o CMakeFiles/lnn.dir/src/operators/lstm.cc.s
 
 CMakeFiles/lnn.dir/src/operators/lstm.cc.o.requires:
 
@@ -371,16 +395,16 @@ CMakeFiles/lnn.dir/src/operators/lstm.cc.o.provides.build: CMakeFiles/lnn.dir/sr
 
 CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o: ../src/operators/pooling1d.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o -c /pycharm-projects/light-nn/src/operators/pooling1d.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o -c /volume/light-nn/src/operators/pooling1d.cc
 
 CMakeFiles/lnn.dir/src/operators/pooling1d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/pooling1d.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/pooling1d.cc > CMakeFiles/lnn.dir/src/operators/pooling1d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/pooling1d.cc > CMakeFiles/lnn.dir/src/operators/pooling1d.cc.i
 
 CMakeFiles/lnn.dir/src/operators/pooling1d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/pooling1d.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/pooling1d.cc -o CMakeFiles/lnn.dir/src/operators/pooling1d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/pooling1d.cc -o CMakeFiles/lnn.dir/src/operators/pooling1d.cc.s
 
 CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o.requires:
 
@@ -395,16 +419,16 @@ CMakeFiles/lnn.dir/src/operators/pooling1d.cc.o.provides.build: CMakeFiles/lnn.d
 
 CMakeFiles/lnn.dir/src/operators/reduction.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/reduction.cc.o: ../src/operators/reduction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lnn.dir/src/operators/reduction.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/reduction.cc.o -c /pycharm-projects/light-nn/src/operators/reduction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lnn.dir/src/operators/reduction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/reduction.cc.o -c /volume/light-nn/src/operators/reduction.cc
 
 CMakeFiles/lnn.dir/src/operators/reduction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/reduction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/reduction.cc > CMakeFiles/lnn.dir/src/operators/reduction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/reduction.cc > CMakeFiles/lnn.dir/src/operators/reduction.cc.i
 
 CMakeFiles/lnn.dir/src/operators/reduction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/reduction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/reduction.cc -o CMakeFiles/lnn.dir/src/operators/reduction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/reduction.cc -o CMakeFiles/lnn.dir/src/operators/reduction.cc.s
 
 CMakeFiles/lnn.dir/src/operators/reduction.cc.o.requires:
 
@@ -419,16 +443,16 @@ CMakeFiles/lnn.dir/src/operators/reduction.cc.o.provides.build: CMakeFiles/lnn.d
 
 CMakeFiles/lnn.dir/src/operators/relu.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/relu.cc.o: ../src/operators/relu.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lnn.dir/src/operators/relu.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/relu.cc.o -c /pycharm-projects/light-nn/src/operators/relu.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lnn.dir/src/operators/relu.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/relu.cc.o -c /volume/light-nn/src/operators/relu.cc
 
 CMakeFiles/lnn.dir/src/operators/relu.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/relu.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/relu.cc > CMakeFiles/lnn.dir/src/operators/relu.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/relu.cc > CMakeFiles/lnn.dir/src/operators/relu.cc.i
 
 CMakeFiles/lnn.dir/src/operators/relu.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/relu.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/relu.cc -o CMakeFiles/lnn.dir/src/operators/relu.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/relu.cc -o CMakeFiles/lnn.dir/src/operators/relu.cc.s
 
 CMakeFiles/lnn.dir/src/operators/relu.cc.o.requires:
 
@@ -443,16 +467,16 @@ CMakeFiles/lnn.dir/src/operators/relu.cc.o.provides.build: CMakeFiles/lnn.dir/sr
 
 CMakeFiles/lnn.dir/src/operators/reverse.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/reverse.cc.o: ../src/operators/reverse.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lnn.dir/src/operators/reverse.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/reverse.cc.o -c /pycharm-projects/light-nn/src/operators/reverse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lnn.dir/src/operators/reverse.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/reverse.cc.o -c /volume/light-nn/src/operators/reverse.cc
 
 CMakeFiles/lnn.dir/src/operators/reverse.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/reverse.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/reverse.cc > CMakeFiles/lnn.dir/src/operators/reverse.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/reverse.cc > CMakeFiles/lnn.dir/src/operators/reverse.cc.i
 
 CMakeFiles/lnn.dir/src/operators/reverse.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/reverse.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/reverse.cc -o CMakeFiles/lnn.dir/src/operators/reverse.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/reverse.cc -o CMakeFiles/lnn.dir/src/operators/reverse.cc.s
 
 CMakeFiles/lnn.dir/src/operators/reverse.cc.o.requires:
 
@@ -467,16 +491,16 @@ CMakeFiles/lnn.dir/src/operators/reverse.cc.o.provides.build: CMakeFiles/lnn.dir
 
 CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o: ../src/operators/rnn-adapter.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o -c /pycharm-projects/light-nn/src/operators/rnn-adapter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o -c /volume/light-nn/src/operators/rnn-adapter.cc
 
 CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/rnn-adapter.cc > CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/rnn-adapter.cc > CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.i
 
 CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/rnn-adapter.cc -o CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/rnn-adapter.cc -o CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.s
 
 CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o.requires:
 
@@ -491,16 +515,16 @@ CMakeFiles/lnn.dir/src/operators/rnn-adapter.cc.o.provides.build: CMakeFiles/lnn
 
 CMakeFiles/lnn.dir/src/operators/scale.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/scale.cc.o: ../src/operators/scale.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/lnn.dir/src/operators/scale.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/scale.cc.o -c /pycharm-projects/light-nn/src/operators/scale.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/lnn.dir/src/operators/scale.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/scale.cc.o -c /volume/light-nn/src/operators/scale.cc
 
 CMakeFiles/lnn.dir/src/operators/scale.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/scale.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/scale.cc > CMakeFiles/lnn.dir/src/operators/scale.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/scale.cc > CMakeFiles/lnn.dir/src/operators/scale.cc.i
 
 CMakeFiles/lnn.dir/src/operators/scale.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/scale.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/scale.cc -o CMakeFiles/lnn.dir/src/operators/scale.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/scale.cc -o CMakeFiles/lnn.dir/src/operators/scale.cc.s
 
 CMakeFiles/lnn.dir/src/operators/scale.cc.o.requires:
 
@@ -515,16 +539,16 @@ CMakeFiles/lnn.dir/src/operators/scale.cc.o.provides.build: CMakeFiles/lnn.dir/s
 
 CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o: ../src/operators/sigmoid.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o -c /pycharm-projects/light-nn/src/operators/sigmoid.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o -c /volume/light-nn/src/operators/sigmoid.cc
 
 CMakeFiles/lnn.dir/src/operators/sigmoid.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/sigmoid.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/sigmoid.cc > CMakeFiles/lnn.dir/src/operators/sigmoid.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/sigmoid.cc > CMakeFiles/lnn.dir/src/operators/sigmoid.cc.i
 
 CMakeFiles/lnn.dir/src/operators/sigmoid.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/sigmoid.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/sigmoid.cc -o CMakeFiles/lnn.dir/src/operators/sigmoid.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/sigmoid.cc -o CMakeFiles/lnn.dir/src/operators/sigmoid.cc.s
 
 CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o.requires:
 
@@ -539,16 +563,16 @@ CMakeFiles/lnn.dir/src/operators/sigmoid.cc.o.provides.build: CMakeFiles/lnn.dir
 
 CMakeFiles/lnn.dir/src/operators/softmax.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/softmax.cc.o: ../src/operators/softmax.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/lnn.dir/src/operators/softmax.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/softmax.cc.o -c /pycharm-projects/light-nn/src/operators/softmax.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/lnn.dir/src/operators/softmax.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/softmax.cc.o -c /volume/light-nn/src/operators/softmax.cc
 
 CMakeFiles/lnn.dir/src/operators/softmax.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/softmax.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/softmax.cc > CMakeFiles/lnn.dir/src/operators/softmax.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/softmax.cc > CMakeFiles/lnn.dir/src/operators/softmax.cc.i
 
 CMakeFiles/lnn.dir/src/operators/softmax.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/softmax.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/softmax.cc -o CMakeFiles/lnn.dir/src/operators/softmax.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/softmax.cc -o CMakeFiles/lnn.dir/src/operators/softmax.cc.s
 
 CMakeFiles/lnn.dir/src/operators/softmax.cc.o.requires:
 
@@ -563,16 +587,16 @@ CMakeFiles/lnn.dir/src/operators/softmax.cc.o.provides.build: CMakeFiles/lnn.dir
 
 CMakeFiles/lnn.dir/src/operators/tanh.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/tanh.cc.o: ../src/operators/tanh.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/lnn.dir/src/operators/tanh.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/tanh.cc.o -c /pycharm-projects/light-nn/src/operators/tanh.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/lnn.dir/src/operators/tanh.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/tanh.cc.o -c /volume/light-nn/src/operators/tanh.cc
 
 CMakeFiles/lnn.dir/src/operators/tanh.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/tanh.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/tanh.cc > CMakeFiles/lnn.dir/src/operators/tanh.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/tanh.cc > CMakeFiles/lnn.dir/src/operators/tanh.cc.i
 
 CMakeFiles/lnn.dir/src/operators/tanh.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/tanh.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/tanh.cc -o CMakeFiles/lnn.dir/src/operators/tanh.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/tanh.cc -o CMakeFiles/lnn.dir/src/operators/tanh.cc.s
 
 CMakeFiles/lnn.dir/src/operators/tanh.cc.o.requires:
 
@@ -587,16 +611,16 @@ CMakeFiles/lnn.dir/src/operators/tanh.cc.o.provides.build: CMakeFiles/lnn.dir/sr
 
 CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o: ../src/operators/weight-wrapper.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o -c /pycharm-projects/light-nn/src/operators/weight-wrapper.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o -c /volume/light-nn/src/operators/weight-wrapper.cc
 
 CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/weight-wrapper.cc > CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/weight-wrapper.cc > CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.i
 
 CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/weight-wrapper.cc -o CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/weight-wrapper.cc -o CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.s
 
 CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o.requires:
 
@@ -611,16 +635,16 @@ CMakeFiles/lnn.dir/src/operators/weight-wrapper.cc.o.provides.build: CMakeFiles/
 
 CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o: ../src/operators/weighted-sum.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o -c /pycharm-projects/light-nn/src/operators/weighted-sum.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o -c /volume/light-nn/src/operators/weighted-sum.cc
 
 CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/operators/weighted-sum.cc > CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/operators/weighted-sum.cc > CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.i
 
 CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/operators/weighted-sum.cc -o CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/operators/weighted-sum.cc -o CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.s
 
 CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o.requires:
 
@@ -635,16 +659,16 @@ CMakeFiles/lnn.dir/src/operators/weighted-sum.cc.o.provides.build: CMakeFiles/ln
 
 CMakeFiles/lnn.dir/src/tensor.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/tensor.cc.o: ../src/tensor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/lnn.dir/src/tensor.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/tensor.cc.o -c /pycharm-projects/light-nn/src/tensor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/lnn.dir/src/tensor.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/tensor.cc.o -c /volume/light-nn/src/tensor.cc
 
 CMakeFiles/lnn.dir/src/tensor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/tensor.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/tensor.cc > CMakeFiles/lnn.dir/src/tensor.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/tensor.cc > CMakeFiles/lnn.dir/src/tensor.cc.i
 
 CMakeFiles/lnn.dir/src/tensor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/tensor.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/tensor.cc -o CMakeFiles/lnn.dir/src/tensor.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/tensor.cc -o CMakeFiles/lnn.dir/src/tensor.cc.s
 
 CMakeFiles/lnn.dir/src/tensor.cc.o.requires:
 
@@ -659,16 +683,16 @@ CMakeFiles/lnn.dir/src/tensor.cc.o.provides.build: CMakeFiles/lnn.dir/src/tensor
 
 CMakeFiles/lnn.dir/src/utils/math-functions.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/src/utils/math-functions.cc.o: ../src/utils/math-functions.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/lnn.dir/src/utils/math-functions.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/utils/math-functions.cc.o -c /pycharm-projects/light-nn/src/utils/math-functions.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/lnn.dir/src/utils/math-functions.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/src/utils/math-functions.cc.o -c /volume/light-nn/src/utils/math-functions.cc
 
 CMakeFiles/lnn.dir/src/utils/math-functions.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/src/utils/math-functions.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/src/utils/math-functions.cc > CMakeFiles/lnn.dir/src/utils/math-functions.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/src/utils/math-functions.cc > CMakeFiles/lnn.dir/src/utils/math-functions.cc.i
 
 CMakeFiles/lnn.dir/src/utils/math-functions.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/src/utils/math-functions.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/src/utils/math-functions.cc -o CMakeFiles/lnn.dir/src/utils/math-functions.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/src/utils/math-functions.cc -o CMakeFiles/lnn.dir/src/utils/math-functions.cc.s
 
 CMakeFiles/lnn.dir/src/utils/math-functions.cc.o.requires:
 
@@ -683,16 +707,16 @@ CMakeFiles/lnn.dir/src/utils/math-functions.cc.o.provides.build: CMakeFiles/lnn.
 
 CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o: CMakeFiles/lnn.dir/flags.make
 CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o: ../third_party/json/jsoncpp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o -c /pycharm-projects/light-nn/third_party/json/jsoncpp.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o -c /volume/light-nn/third_party/json/jsoncpp.cc
 
 CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/third_party/json/jsoncpp.cc > CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/third_party/json/jsoncpp.cc > CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.i
 
 CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/third_party/json/jsoncpp.cc -o CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/third_party/json/jsoncpp.cc -o CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.s
 
 CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o.requires:
 
@@ -712,6 +736,7 @@ lnn_OBJECTS = \
 "CMakeFiles/lnn.dir/src/operators/attention.cc.o" \
 "CMakeFiles/lnn.dir/src/operators/concat.cc.o" \
 "CMakeFiles/lnn.dir/src/operators/conv1d.cc.o" \
+"CMakeFiles/lnn.dir/src/operators/conv2d.cc.o" \
 "CMakeFiles/lnn.dir/src/operators/crf.cc.o" \
 "CMakeFiles/lnn.dir/src/operators/eltwise.cc.o" \
 "CMakeFiles/lnn.dir/src/operators/embedding.cc.o" \
@@ -743,6 +768,7 @@ lib/liblnn.a: CMakeFiles/lnn.dir/src/net.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/attention.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/concat.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/conv1d.cc.o
+lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/conv2d.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/crf.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/eltwise.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/src/operators/embedding.cc.o
@@ -767,7 +793,7 @@ lib/liblnn.a: CMakeFiles/lnn.dir/src/utils/math-functions.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/third_party/json/jsoncpp.cc.o
 lib/liblnn.a: CMakeFiles/lnn.dir/build.make
 lib/liblnn.a: CMakeFiles/lnn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX static library lib/liblnn.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library lib/liblnn.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/lnn.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lnn.dir/link.txt --verbose=$(VERBOSE)
 
@@ -781,6 +807,7 @@ CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/net.cc.o.requires
 CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/attention.cc.o.requires
 CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/concat.cc.o.requires
 CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/conv1d.cc.o.requires
+CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/conv2d.cc.o.requires
 CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/crf.cc.o.requires
 CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/eltwise.cc.o.requires
 CMakeFiles/lnn.dir/requires: CMakeFiles/lnn.dir/src/operators/embedding.cc.o.requires
@@ -811,6 +838,6 @@ CMakeFiles/lnn.dir/clean:
 .PHONY : CMakeFiles/lnn.dir/clean
 
 CMakeFiles/lnn.dir/depend:
-	cd /pycharm-projects/light-nn/build1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /pycharm-projects/light-nn /pycharm-projects/light-nn /pycharm-projects/light-nn/build1 /pycharm-projects/light-nn/build1 /pycharm-projects/light-nn/build1/CMakeFiles/lnn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /volume/light-nn/build1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /volume/light-nn /volume/light-nn /volume/light-nn/build1 /volume/light-nn/build1 /volume/light-nn/build1/CMakeFiles/lnn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lnn.dir/depend
 

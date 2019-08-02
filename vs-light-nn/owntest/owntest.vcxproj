@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\docker-volume\light-nn\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\docker-volume\vs-light-nn;D:\docker-volume\light-nn\third_party;D:\docker-volume\light-nn\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\docker-volume\vs-light-nn\lib\Debug;D:\docker-volume\vs-light-nn\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

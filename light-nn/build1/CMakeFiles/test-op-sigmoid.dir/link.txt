@@ -1,1 +1,1 @@
-/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-sigmoid.dir/test/test-op-sigmoid.cc.o  -o test/test-op-sigmoid lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 
+/usr/bin/c++   -pthread  -rdynamic CMakeFiles/test-op-sigmoid.dir/test/test-op-sigmoid.cc.o  -o test/test-op-sigmoid lib/libgtest.a lib/liblnn.a -lpthread lib/openblas.lib 

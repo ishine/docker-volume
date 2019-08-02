@@ -1,1 +1,1 @@
-/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-weight-wrapper.dir/test/test-op-weight-wrapper.cc.o  -o test/test-op-weight-wrapper lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 
+/usr/bin/c++   -pthread  -rdynamic CMakeFiles/test-op-weight-wrapper.dir/test/test-op-weight-wrapper.cc.o  -o test/test-op-weight-wrapper lib/libgtest.a lib/liblnn.a -lpthread lib/openblas.lib 

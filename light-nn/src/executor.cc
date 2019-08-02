@@ -12,6 +12,7 @@
 
 namespace lnn {
 
+//构造函数
 Executor::Executor(const Net* net, int num_threads) {
   LOG(INFO) << "Version: " << LNN_VERSION_MAJOR << "." << LNN_VERSION_MINOR << std::endl;
   m_net = const_cast<Net*>(net);
@@ -53,6 +54,8 @@ Executor::Executor(const Net* net, int num_threads) {
   openblas_set_num_threads(m_num_threads);
 }
 
+
+//析构函数
 Executor::~Executor() {
   m_net = NULL;
   m_dynamic_tensors.clear();
@@ -78,7 +81,7 @@ const std::vector<Tensor *> & Executor::execute(
   // execute each operator's forward
   const std::vector<std::vector<size_t> > &input_ids = m_net->op_input_ids();
   const std::vector<std::vector<size_t> > &output_ids = m_net->op_output_ids();
-  std::vector<Tensor *> op_input, op_output;
+  std::vector<Tensor *> op_input, op_output; //存放的tensor类的tensor
   for (size_t i = 0; i < m_operators.size(); ++i) {
     op_input.resize(input_ids[i].size());
     for (size_t j = 0; j < input_ids[i].size(); ++j) {
@@ -89,6 +92,7 @@ const std::vector<Tensor *> & Executor::execute(
       op_output[j] = &(m_dynamic_tensors[output_ids[i][j]]);
     }
     if (! m_operators[i]->forward(op_input, op_output)) {
+	  LOG(INFO) << "forward failed!" << std::endl;
       success = false;
       break;
     }

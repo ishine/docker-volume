@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/pycharm-projects/light-nn/third_party/gtest/gtest-all.cc" "/pycharm-projects/light-nn/build1/CMakeFiles/gtest.dir/third_party/gtest/gtest-all.cc.o"
-  "/pycharm-projects/light-nn/third_party/gtest/gtest_main.cc" "/pycharm-projects/light-nn/build1/CMakeFiles/gtest.dir/third_party/gtest/gtest_main.cc.o"
+  "/volume/light-nn/third_party/gtest/gtest-all.cc" "/volume/light-nn/build1/CMakeFiles/gtest.dir/third_party/gtest/gtest-all.cc.o"
+  "/volume/light-nn/third_party/gtest/gtest_main.cc" "/volume/light-nn/build1/CMakeFiles/gtest.dir/third_party/gtest/gtest_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -8,6 +8,7 @@ CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operator.h
 CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/attention.h
 CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/concat.h
 CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/conv1d.h
+CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/conv2d.h
 CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/crf.h
 CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/eltwise.h
 CMakeFiles/lnn.dir/src/executor.cc.o: ../include/operators/embedding.h
@@ -41,6 +42,7 @@ CMakeFiles/lnn.dir/src/net.cc.o: ../include/operator.h
 CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/attention.h
 CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/concat.h
 CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/conv1d.h
+CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/conv2d.h
 CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/crf.h
 CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/eltwise.h
 CMakeFiles/lnn.dir/src/net.cc.o: ../include/operators/embedding.h
@@ -98,6 +100,17 @@ CMakeFiles/lnn.dir/src/operators/conv1d.cc.o: ../third_party/openblas/cblas.h
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o: ../third_party/openblas/openblas_config.h
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o: ../src/operators/conv1d.cc
 CMakeFiles/lnn.dir/src/operators/conv1d.cc.o: config.h
+
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../include/operator.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../include/operators/conv2d.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../include/tensor.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../include/utils/log.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../include/utils/math-functions.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../third_party/json/json.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../third_party/openblas/cblas.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../third_party/openblas/openblas_config.h
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: ../src/operators/conv2d.cc
+CMakeFiles/lnn.dir/src/operators/conv2d.cc.o: config.h
 
 CMakeFiles/lnn.dir/src/operators/crf.cc.o: ../include/operator.h
 CMakeFiles/lnn.dir/src/operators/crf.cc.o: ../include/operators/crf.h

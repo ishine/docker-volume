@@ -130,6 +130,7 @@ bool Net::load(const char *model_file, const char *weight_file, const char *dir)
   m_weight_tensor_name2id.clear();
 //  LOG(INFO) << "weight_tensor_name" << std::endl;
   for (uint16_t i = 0; i < num_weight_tensor; ++i) {
+	  //tensor name = 32 字节
     std::string tensor_name = std::string(cursor + i * 32, 32);
     // use 'c_str()' to strip multiple terminator if possible
 	//char* strtemp = GetChar(tensor_name.c_str());
@@ -147,7 +148,7 @@ bool Net::load(const char *model_file, const char *weight_file, const char *dir)
     weight_tensor_size[i] = tensor_size;
     if (0 == i) weight_tensor_offset[i] = 0;
     else weight_tensor_offset[i] = weight_tensor_offset[i-1] + weight_tensor_size[i-1];
-    cursor += 4;
+    cursor += 4;// weight elem 4 字节
 //    LOG(INFO) << weight_tensor_size[i] << std::endl;
   }
   uint32_t total_tensor_size = weight_tensor_offset[num_weight_tensor-1]
@@ -158,13 +159,30 @@ bool Net::load(const char *model_file, const char *weight_file, const char *dir)
   m_weight_tensors.resize(num_weight_tensor);
   for (size_t i = 0; i < num_weight_tensor; ++i) {
     m_weight_tensors[i].set_name(m_weight_tensor_name[i]);
-    m_weight_tensors[i].set_data(m_weight_data + weight_tensor_offset[i], weight_tensor_size[i]);
+    m_weight_tensors[i].set_data(m_weight_data + weight_tensor_offset[i], weight_tensor_size[i]); 
     LOG(INFO) << "weight_tensor_name: " << m_weight_tensor_name[i] << std::endl;
     LOG(INFO) << "weight_tensor_size: " << weight_tensor_size[i] << std::endl;
     LOG(INFO) << "weight_tensor_offset: " << weight_tensor_offset[i] << std::endl;
     // tensor shape has NOT been initialized, it will be set in operator which uses it
   }
 
+  std::cout << "attribute value of net.cc:" << std::endl;
+  std::cout << "m_weight_data" << std::endl;
+  std::cout << total_tensor_size << std::endl;
+  //for (int i = 0; i <total_tensor_size; i++)
+  //{
+	 // std::cout << m_weight_data[i]<<"\t ";
+  //}
+  std::cout << std::endl;
+  std::cout << "num_weight_tensor:\t" << num_weight_tensor << std::endl;
+  std::cout << "the size of m_dynamic_tensor_name:\n" << m_dynamic_tensor_name.size() << std::endl;
+ /* for (int i = 0; m_dynamic_tensor_name.size(); i++)
+  {
+	  std::cout << *(m_dynamic_tensor_name.data() + i) << "\t";
+  }*/
+  //std::cout << "m_weight_data:\t" << *m_weight_data << std::endl;
+  //std::cout << "m_weight_data:\t" << *m_weight_data << std::endl;
+  //std::cout << "m_weight_data:\t" << *m_weight_data << std::endl;
   return true;
 }
 
@@ -185,6 +203,9 @@ bool Net::parse_operators_dependency() {
     m_operator_name[i] = op["name"].asString();
 
     std::vector<size_t> input_ids, output_ids;
+
+
+	std::cout <<"输入op的大小："<< op["input"].size() << std::endl;
     // process input
     for (int j = 0; j < static_cast<int>(op["input"].size()); ++j) {
       std::string name = op["input"][j].asString();
@@ -197,6 +218,7 @@ bool Net::parse_operators_dependency() {
     }
     m_input_ids.push_back(input_ids);
     // process output
+	std::cout << "输出op的大小：" << op["output"].size() << std::endl;
     for (int j = 0; j < static_cast<int>(op["output"].size()); ++j) {
       std::string name = op["output"][j].asString();
       it = m_dynamic_tensor_name2id.find(name);

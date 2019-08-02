@@ -1,1 +1,1 @@
-/usr/bin/g++   -pthread  -rdynamic CMakeFiles/test-op-linear.dir/test/test-op-linear.cc.o  -o test/test-op-linear lib/libgtest.a lib/liblnn.a -lpthread lib/libopenblas.a 
+/usr/bin/c++   -pthread  -rdynamic CMakeFiles/test-op-linear.dir/test/test-op-linear.cc.o  -o test/test-op-linear lib/libgtest.a lib/liblnn.a -lpthread lib/openblas.lib 

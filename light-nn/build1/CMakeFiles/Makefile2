@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /pycharm-projects/light-nn
+CMAKE_SOURCE_DIR = /volume/light-nn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /pycharm-projects/light-nn/build1
+CMAKE_BINARY_DIR = /volume/light-nn/build1
 
 #=============================================================================
 # Target rules for target CMakeFiles/test-tensor.dir
@@ -67,7 +67,7 @@ CMakeFiles/test-tensor.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-tensor.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-tensor.dir/build.make CMakeFiles/test-tensor.dir/depend
 	$(MAKE) -f CMakeFiles/test-tensor.dir/build.make CMakeFiles/test-tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=99,100 "Built target test-tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=99,100 "Built target test-tensor"
 .PHONY : CMakeFiles/test-tensor.dir/all
 
 # Include target in all.
@@ -77,9 +77,9 @@ all: CMakeFiles/test-tensor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-tensor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-tensor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-tensor.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ CMakeFiles/test-op-weighted-sum.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-weighted-sum.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-weighted-sum.dir/build.make CMakeFiles/test-op-weighted-sum.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-weighted-sum.dir/build.make CMakeFiles/test-op-weighted-sum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=97,98 "Built target test-op-weighted-sum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=97,98 "Built target test-op-weighted-sum"
 .PHONY : CMakeFiles/test-op-weighted-sum.dir/all
 
 # Include target in all.
@@ -115,9 +115,9 @@ all: CMakeFiles/test-op-weighted-sum.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-weighted-sum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-weighted-sum.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-weighted-sum.dir/rule
 
 # Convenience name for target.
@@ -143,7 +143,7 @@ CMakeFiles/test-op-tanh.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-tanh.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-tanh.dir/build.make CMakeFiles/test-op-tanh.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-tanh.dir/build.make CMakeFiles/test-op-tanh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=93,94 "Built target test-op-tanh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=93,94 "Built target test-op-tanh"
 .PHONY : CMakeFiles/test-op-tanh.dir/all
 
 # Include target in all.
@@ -153,9 +153,9 @@ all: CMakeFiles/test-op-tanh.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-tanh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-tanh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-tanh.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ CMakeFiles/test-op-softmax.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-softmax.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-softmax.dir/build.make CMakeFiles/test-op-softmax.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-softmax.dir/build.make CMakeFiles/test-op-softmax.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=91,92 "Built target test-op-softmax"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=91,92 "Built target test-op-softmax"
 .PHONY : CMakeFiles/test-op-softmax.dir/all
 
 # Include target in all.
@@ -191,9 +191,9 @@ all: CMakeFiles/test-op-softmax.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-softmax.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-softmax.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-softmax.dir/rule
 
 # Convenience name for target.
@@ -219,7 +219,7 @@ CMakeFiles/test-op-rnn-adapter.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-rnn-adapter.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-rnn-adapter.dir/build.make CMakeFiles/test-op-rnn-adapter.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-rnn-adapter.dir/build.make CMakeFiles/test-op-rnn-adapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=86 "Built target test-op-rnn-adapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=86,87 "Built target test-op-rnn-adapter"
 .PHONY : CMakeFiles/test-op-rnn-adapter.dir/all
 
 # Include target in all.
@@ -229,9 +229,9 @@ all: CMakeFiles/test-op-rnn-adapter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-rnn-adapter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-rnn-adapter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-rnn-adapter.dir/rule
 
 # Convenience name for target.
@@ -257,7 +257,7 @@ CMakeFiles/test-op-reverse.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-reverse.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-reverse.dir/build.make CMakeFiles/test-op-reverse.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-reverse.dir/build.make CMakeFiles/test-op-reverse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=84,85 "Built target test-op-reverse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=84,85 "Built target test-op-reverse"
 .PHONY : CMakeFiles/test-op-reverse.dir/all
 
 # Include target in all.
@@ -267,9 +267,9 @@ all: CMakeFiles/test-op-reverse.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-reverse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-reverse.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-reverse.dir/rule
 
 # Convenience name for target.
@@ -295,7 +295,7 @@ CMakeFiles/test-op-relu.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-relu.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-relu.dir/build.make CMakeFiles/test-op-relu.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-relu.dir/build.make CMakeFiles/test-op-relu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=82,83 "Built target test-op-relu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=82,83 "Built target test-op-relu"
 .PHONY : CMakeFiles/test-op-relu.dir/all
 
 # Include target in all.
@@ -305,9 +305,9 @@ all: CMakeFiles/test-op-relu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-relu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-relu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-relu.dir/rule
 
 # Convenience name for target.
@@ -333,7 +333,7 @@ CMakeFiles/test-op-attention.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-attention.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-attention.dir/build.make CMakeFiles/test-op-attention.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-attention.dir/build.make CMakeFiles/test-op-attention.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=58 "Built target test-op-attention"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=58,59 "Built target test-op-attention"
 .PHONY : CMakeFiles/test-op-attention.dir/all
 
 # Include target in all.
@@ -343,9 +343,9 @@ all: CMakeFiles/test-op-attention.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-attention.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-attention.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-attention.dir/rule
 
 # Convenience name for target.
@@ -371,7 +371,7 @@ CMakeFiles/test-op-reduction.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-reduction.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-reduction.dir/build.make CMakeFiles/test-op-reduction.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-reduction.dir/build.make CMakeFiles/test-op-reduction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=80,81 "Built target test-op-reduction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=80,81 "Built target test-op-reduction"
 .PHONY : CMakeFiles/test-op-reduction.dir/all
 
 # Include target in all.
@@ -381,9 +381,9 @@ all: CMakeFiles/test-op-reduction.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-reduction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-reduction.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-reduction.dir/rule
 
 # Convenience name for target.
@@ -409,7 +409,7 @@ CMakeFiles/test-op-eltwise.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-eltwise.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-eltwise.dir/build.make CMakeFiles/test-op-eltwise.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-eltwise.dir/build.make CMakeFiles/test-op-eltwise.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=65,66 "Built target test-op-eltwise"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=65,66 "Built target test-op-eltwise"
 .PHONY : CMakeFiles/test-op-eltwise.dir/all
 
 # Include target in all.
@@ -419,9 +419,9 @@ all: CMakeFiles/test-op-eltwise.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-eltwise.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-eltwise.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-eltwise.dir/rule
 
 # Convenience name for target.
@@ -447,7 +447,7 @@ CMakeFiles/test-net.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-net.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-net.dir/build.make CMakeFiles/test-net.dir/depend
 	$(MAKE) -f CMakeFiles/test-net.dir/build.make CMakeFiles/test-net.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=56,57 "Built target test-net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=56,57 "Built target test-net"
 .PHONY : CMakeFiles/test-net.dir/all
 
 # Include target in all.
@@ -457,9 +457,9 @@ all: CMakeFiles/test-net.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-net.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-net.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-net.dir/rule
 
 # Convenience name for target.
@@ -485,7 +485,7 @@ CMakeFiles/test-executor.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-executor.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-executor.dir/build.make CMakeFiles/test-executor.dir/depend
 	$(MAKE) -f CMakeFiles/test-executor.dir/build.make CMakeFiles/test-executor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=54,55 "Built target test-executor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=54,55 "Built target test-executor"
 .PHONY : CMakeFiles/test-executor.dir/all
 
 # Include target in all.
@@ -495,9 +495,9 @@ all: CMakeFiles/test-executor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-executor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-executor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-executor.dir/rule
 
 # Convenience name for target.
@@ -523,7 +523,7 @@ CMakeFiles/test-op-scale.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-scale.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-scale.dir/build.make CMakeFiles/test-op-scale.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-scale.dir/build.make CMakeFiles/test-op-scale.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=87,88 "Built target test-op-scale"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=88 "Built target test-op-scale"
 .PHONY : CMakeFiles/test-op-scale.dir/all
 
 # Include target in all.
@@ -533,9 +533,9 @@ all: CMakeFiles/test-op-scale.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-scale.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-scale.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-scale.dir/rule
 
 # Convenience name for target.
@@ -560,7 +560,7 @@ clean: CMakeFiles/test-op-scale.dir/clean
 CMakeFiles/lnn.dir/all:
 	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/depend
 	$(MAKE) -f CMakeFiles/lnn.dir/build.make CMakeFiles/lnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target lnn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Built target lnn"
 .PHONY : CMakeFiles/lnn.dir/all
 
 # Include target in all.
@@ -570,9 +570,9 @@ all: CMakeFiles/lnn.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lnn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lnn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/lnn.dir/rule
 
 # Convenience name for target.
@@ -597,7 +597,7 @@ clean: CMakeFiles/lnn.dir/clean
 CMakeFiles/gtest.dir/all:
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=1,2 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=1,2 "Built target gtest"
 .PHONY : CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -607,9 +607,9 @@ all: CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -635,7 +635,7 @@ CMakeFiles/test-op-conv1d.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-conv1d.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-conv1d.dir/build.make CMakeFiles/test-op-conv1d.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-conv1d.dir/build.make CMakeFiles/test-op-conv1d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=61,62 "Built target test-op-conv1d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=62 "Built target test-op-conv1d"
 .PHONY : CMakeFiles/test-op-conv1d.dir/all
 
 # Include target in all.
@@ -645,9 +645,9 @@ all: CMakeFiles/test-op-conv1d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-conv1d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-conv1d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-conv1d.dir/rule
 
 # Convenience name for target.
@@ -673,7 +673,7 @@ CMakeFiles/test-op-crf.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-crf.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-crf.dir/build.make CMakeFiles/test-op-crf.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-crf.dir/build.make CMakeFiles/test-op-crf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=63,64 "Built target test-op-crf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=63,64 "Built target test-op-crf"
 .PHONY : CMakeFiles/test-op-crf.dir/all
 
 # Include target in all.
@@ -683,9 +683,9 @@ all: CMakeFiles/test-op-crf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-crf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-crf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-crf.dir/rule
 
 # Convenience name for target.
@@ -711,7 +711,7 @@ CMakeFiles/test-op-sigmoid.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-sigmoid.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-sigmoid.dir/build.make CMakeFiles/test-op-sigmoid.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-sigmoid.dir/build.make CMakeFiles/test-op-sigmoid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=89,90 "Built target test-op-sigmoid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=89,90 "Built target test-op-sigmoid"
 .PHONY : CMakeFiles/test-op-sigmoid.dir/all
 
 # Include target in all.
@@ -721,9 +721,9 @@ all: CMakeFiles/test-op-sigmoid.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-sigmoid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-sigmoid.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-sigmoid.dir/rule
 
 # Convenience name for target.
@@ -749,7 +749,7 @@ CMakeFiles/test-op-gelu.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-gelu.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-gelu.dir/build.make CMakeFiles/test-op-gelu.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-gelu.dir/build.make CMakeFiles/test-op-gelu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=69,70 "Built target test-op-gelu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=69,70 "Built target test-op-gelu"
 .PHONY : CMakeFiles/test-op-gelu.dir/all
 
 # Include target in all.
@@ -759,9 +759,9 @@ all: CMakeFiles/test-op-gelu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-gelu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-gelu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-gelu.dir/rule
 
 # Convenience name for target.
@@ -787,7 +787,7 @@ CMakeFiles/test-op-concat.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-concat.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-concat.dir/build.make CMakeFiles/test-op-concat.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-concat.dir/build.make CMakeFiles/test-op-concat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=59,60 "Built target test-op-concat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=60,61 "Built target test-op-concat"
 .PHONY : CMakeFiles/test-op-concat.dir/all
 
 # Include target in all.
@@ -797,9 +797,9 @@ all: CMakeFiles/test-op-concat.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-concat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-concat.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-concat.dir/rule
 
 # Convenience name for target.
@@ -825,7 +825,7 @@ CMakeFiles/test-op-lstm.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-lstm.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-lstm.dir/build.make CMakeFiles/test-op-lstm.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-lstm.dir/build.make CMakeFiles/test-op-lstm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=76,77 "Built target test-op-lstm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=76,77 "Built target test-op-lstm"
 .PHONY : CMakeFiles/test-op-lstm.dir/all
 
 # Include target in all.
@@ -835,9 +835,9 @@ all: CMakeFiles/test-op-lstm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-lstm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-lstm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-lstm.dir/rule
 
 # Convenience name for target.
@@ -863,7 +863,7 @@ CMakeFiles/test-op-embedding.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-embedding.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-embedding.dir/build.make CMakeFiles/test-op-embedding.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-embedding.dir/build.make CMakeFiles/test-op-embedding.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=67,68 "Built target test-op-embedding"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=67,68 "Built target test-op-embedding"
 .PHONY : CMakeFiles/test-op-embedding.dir/all
 
 # Include target in all.
@@ -873,9 +873,9 @@ all: CMakeFiles/test-op-embedding.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-embedding.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-embedding.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-embedding.dir/rule
 
 # Convenience name for target.
@@ -901,7 +901,7 @@ CMakeFiles/test-all.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-all.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-all.dir/build.make CMakeFiles/test-all.dir/depend
 	$(MAKE) -f CMakeFiles/test-all.dir/build.make CMakeFiles/test-all.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target test-all"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target test-all"
 .PHONY : CMakeFiles/test-all.dir/all
 
 # Include target in all.
@@ -911,9 +911,9 @@ all: CMakeFiles/test-all.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-all.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 53
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-all.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-all.dir/rule
 
 # Convenience name for target.
@@ -939,7 +939,7 @@ CMakeFiles/test-op-gru.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-gru.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-gru.dir/build.make CMakeFiles/test-op-gru.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-gru.dir/build.make CMakeFiles/test-op-gru.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=71 "Built target test-op-gru"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=71,72 "Built target test-op-gru"
 .PHONY : CMakeFiles/test-op-gru.dir/all
 
 # Include target in all.
@@ -949,9 +949,9 @@ all: CMakeFiles/test-op-gru.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-gru.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-gru.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-gru.dir/rule
 
 # Convenience name for target.
@@ -977,7 +977,7 @@ CMakeFiles/test-op-weight-wrapper.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-weight-wrapper.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-weight-wrapper.dir/build.make CMakeFiles/test-op-weight-wrapper.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-weight-wrapper.dir/build.make CMakeFiles/test-op-weight-wrapper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=95,96 "Built target test-op-weight-wrapper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=95,96 "Built target test-op-weight-wrapper"
 .PHONY : CMakeFiles/test-op-weight-wrapper.dir/all
 
 # Include target in all.
@@ -987,9 +987,9 @@ all: CMakeFiles/test-op-weight-wrapper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-weight-wrapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-weight-wrapper.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-weight-wrapper.dir/rule
 
 # Convenience name for target.
@@ -1015,7 +1015,7 @@ CMakeFiles/test-op-linear.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-linear.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-linear.dir/build.make CMakeFiles/test-op-linear.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-linear.dir/build.make CMakeFiles/test-op-linear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=72,73 "Built target test-op-linear"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=73,74 "Built target test-op-linear"
 .PHONY : CMakeFiles/test-op-linear.dir/all
 
 # Include target in all.
@@ -1025,9 +1025,9 @@ all: CMakeFiles/test-op-linear.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-linear.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-linear.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-linear.dir/rule
 
 # Convenience name for target.
@@ -1053,7 +1053,7 @@ CMakeFiles/test-op-lookup-table.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-lookup-table.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-lookup-table.dir/build.make CMakeFiles/test-op-lookup-table.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-lookup-table.dir/build.make CMakeFiles/test-op-lookup-table.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=74,75 "Built target test-op-lookup-table"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=75 "Built target test-op-lookup-table"
 .PHONY : CMakeFiles/test-op-lookup-table.dir/all
 
 # Include target in all.
@@ -1063,9 +1063,9 @@ all: CMakeFiles/test-op-lookup-table.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-lookup-table.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-lookup-table.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-lookup-table.dir/rule
 
 # Convenience name for target.
@@ -1091,7 +1091,7 @@ CMakeFiles/test-op-pooling1d.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/test-op-pooling1d.dir/all: CMakeFiles/lnn.dir/all
 	$(MAKE) -f CMakeFiles/test-op-pooling1d.dir/build.make CMakeFiles/test-op-pooling1d.dir/depend
 	$(MAKE) -f CMakeFiles/test-op-pooling1d.dir/build.make CMakeFiles/test-op-pooling1d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=78,79 "Built target test-op-pooling1d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=78,79 "Built target test-op-pooling1d"
 .PHONY : CMakeFiles/test-op-pooling1d.dir/all
 
 # Include target in all.
@@ -1101,9 +1101,9 @@ all: CMakeFiles/test-op-pooling1d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-op-pooling1d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test-op-pooling1d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /pycharm-projects/light-nn/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /volume/light-nn/build1/CMakeFiles 0
 .PHONY : CMakeFiles/test-op-pooling1d.dir/rule
 
 # Convenience name for target.

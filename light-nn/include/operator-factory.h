@@ -13,6 +13,7 @@
 #include "operators/attention.h"
 #include "operators/concat.h"
 #include "operators/conv1d.h"
+#include "operators/conv2d.h"
 #include "operators/crf.h"
 #include "operators/eltwise.h"
 #include "operators/embedding.h"
@@ -39,6 +40,7 @@ static const char * g_op_types[] = {
   "Attention",
   "Concat",
   "Conv1D",
+  "Conv2D",
   "CRF",
   "Eltwise",
   "Embedding",
@@ -74,6 +76,8 @@ inline void get_operator(const std::string &type, const Json::Value &config, Ope
     op = new Concat(config);
   } else if ("Conv1D" == type) {
     op = new Conv1D(config);
+  }else if ("Conv2D" == type) {
+	op = new Conv2D(config);
   } else if ("CRF" == type) {
     op = new CRF(config);
   } else if ("Eltwise" == type) {

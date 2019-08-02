@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /pycharm-projects/light-nn
+CMAKE_SOURCE_DIR = /volume/light-nn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /pycharm-projects/light-nn/build1
+CMAKE_BINARY_DIR = /volume/light-nn/build1
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test-all.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/test-all.dir/flags.make
 
 CMakeFiles/test-all.dir/test/test-executor.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-executor.cc.o: ../test/test-executor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test-all.dir/test/test-executor.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-executor.cc.o -c /pycharm-projects/light-nn/test/test-executor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test-all.dir/test/test-executor.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-executor.cc.o -c /volume/light-nn/test/test-executor.cc
 
 CMakeFiles/test-all.dir/test/test-executor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-executor.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-executor.cc > CMakeFiles/test-all.dir/test/test-executor.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-executor.cc > CMakeFiles/test-all.dir/test/test-executor.cc.i
 
 CMakeFiles/test-all.dir/test/test-executor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-executor.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-executor.cc -o CMakeFiles/test-all.dir/test/test-executor.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-executor.cc -o CMakeFiles/test-all.dir/test/test-executor.cc.s
 
 CMakeFiles/test-all.dir/test/test-executor.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/test-all.dir/test/test-executor.cc.o.provides.build: CMakeFiles/test-
 
 CMakeFiles/test-all.dir/test/test-net.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-net.cc.o: ../test/test-net.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test-all.dir/test/test-net.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-net.cc.o -c /pycharm-projects/light-nn/test/test-net.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test-all.dir/test/test-net.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-net.cc.o -c /volume/light-nn/test/test-net.cc
 
 CMakeFiles/test-all.dir/test/test-net.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-net.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-net.cc > CMakeFiles/test-all.dir/test/test-net.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-net.cc > CMakeFiles/test-all.dir/test/test-net.cc.i
 
 CMakeFiles/test-all.dir/test/test-net.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-net.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-net.cc -o CMakeFiles/test-all.dir/test/test-net.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-net.cc -o CMakeFiles/test-all.dir/test/test-net.cc.s
 
 CMakeFiles/test-all.dir/test/test-net.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/test-all.dir/test/test-net.cc.o.provides.build: CMakeFiles/test-all.d
 
 CMakeFiles/test-all.dir/test/test-op-attention.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-attention.cc.o: ../test/test-op-attention.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test-all.dir/test/test-op-attention.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-attention.cc.o -c /pycharm-projects/light-nn/test/test-op-attention.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test-all.dir/test/test-op-attention.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-attention.cc.o -c /volume/light-nn/test/test-op-attention.cc
 
 CMakeFiles/test-all.dir/test/test-op-attention.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-attention.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-attention.cc > CMakeFiles/test-all.dir/test/test-op-attention.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-attention.cc > CMakeFiles/test-all.dir/test/test-op-attention.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-attention.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-attention.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-attention.cc -o CMakeFiles/test-all.dir/test/test-op-attention.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-attention.cc -o CMakeFiles/test-all.dir/test/test-op-attention.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-attention.cc.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/test-all.dir/test/test-op-attention.cc.o.provides.build: CMakeFiles/t
 
 CMakeFiles/test-all.dir/test/test-op-concat.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-concat.cc.o: ../test/test-op-concat.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test-all.dir/test/test-op-concat.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-concat.cc.o -c /pycharm-projects/light-nn/test/test-op-concat.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test-all.dir/test/test-op-concat.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-concat.cc.o -c /volume/light-nn/test/test-op-concat.cc
 
 CMakeFiles/test-all.dir/test/test-op-concat.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-concat.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-concat.cc > CMakeFiles/test-all.dir/test/test-op-concat.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-concat.cc > CMakeFiles/test-all.dir/test/test-op-concat.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-concat.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-concat.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-concat.cc -o CMakeFiles/test-all.dir/test/test-op-concat.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-concat.cc -o CMakeFiles/test-all.dir/test/test-op-concat.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-concat.cc.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/test-all.dir/test/test-op-concat.cc.o.provides.build: CMakeFiles/test
 
 CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o: ../test/test-op-conv1d.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o -c /pycharm-projects/light-nn/test/test-op-conv1d.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o -c /volume/light-nn/test/test-op-conv1d.cc
 
 CMakeFiles/test-all.dir/test/test-op-conv1d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-conv1d.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-conv1d.cc > CMakeFiles/test-all.dir/test/test-op-conv1d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-conv1d.cc > CMakeFiles/test-all.dir/test/test-op-conv1d.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-conv1d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-conv1d.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-conv1d.cc -o CMakeFiles/test-all.dir/test/test-op-conv1d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-conv1d.cc -o CMakeFiles/test-all.dir/test/test-op-conv1d.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/test-all.dir/test/test-op-conv1d.cc.o.provides.build: CMakeFiles/test
 
 CMakeFiles/test-all.dir/test/test-op-crf.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-crf.cc.o: ../test/test-op-crf.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test-all.dir/test/test-op-crf.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-crf.cc.o -c /pycharm-projects/light-nn/test/test-op-crf.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test-all.dir/test/test-op-crf.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-crf.cc.o -c /volume/light-nn/test/test-op-crf.cc
 
 CMakeFiles/test-all.dir/test/test-op-crf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-crf.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-crf.cc > CMakeFiles/test-all.dir/test/test-op-crf.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-crf.cc > CMakeFiles/test-all.dir/test/test-op-crf.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-crf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-crf.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-crf.cc -o CMakeFiles/test-all.dir/test/test-op-crf.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-crf.cc -o CMakeFiles/test-all.dir/test/test-op-crf.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-crf.cc.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/test-all.dir/test/test-op-crf.cc.o.provides.build: CMakeFiles/test-al
 
 CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o: ../test/test-op-eltwise.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o -c /pycharm-projects/light-nn/test/test-op-eltwise.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o -c /volume/light-nn/test/test-op-eltwise.cc
 
 CMakeFiles/test-all.dir/test/test-op-eltwise.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-eltwise.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-eltwise.cc > CMakeFiles/test-all.dir/test/test-op-eltwise.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-eltwise.cc > CMakeFiles/test-all.dir/test/test-op-eltwise.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-eltwise.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-eltwise.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-eltwise.cc -o CMakeFiles/test-all.dir/test/test-op-eltwise.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-eltwise.cc -o CMakeFiles/test-all.dir/test/test-op-eltwise.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/test-all.dir/test/test-op-eltwise.cc.o.provides.build: CMakeFiles/tes
 
 CMakeFiles/test-all.dir/test/test-op-embedding.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-embedding.cc.o: ../test/test-op-embedding.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test-all.dir/test/test-op-embedding.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-embedding.cc.o -c /pycharm-projects/light-nn/test/test-op-embedding.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test-all.dir/test/test-op-embedding.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-embedding.cc.o -c /volume/light-nn/test/test-op-embedding.cc
 
 CMakeFiles/test-all.dir/test/test-op-embedding.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-embedding.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-embedding.cc > CMakeFiles/test-all.dir/test/test-op-embedding.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-embedding.cc > CMakeFiles/test-all.dir/test/test-op-embedding.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-embedding.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-embedding.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-embedding.cc -o CMakeFiles/test-all.dir/test/test-op-embedding.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-embedding.cc -o CMakeFiles/test-all.dir/test/test-op-embedding.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-embedding.cc.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/test-all.dir/test/test-op-embedding.cc.o.provides.build: CMakeFiles/t
 
 CMakeFiles/test-all.dir/test/test-op-gelu.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-gelu.cc.o: ../test/test-op-gelu.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test-all.dir/test/test-op-gelu.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-gelu.cc.o -c /pycharm-projects/light-nn/test/test-op-gelu.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test-all.dir/test/test-op-gelu.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-gelu.cc.o -c /volume/light-nn/test/test-op-gelu.cc
 
 CMakeFiles/test-all.dir/test/test-op-gelu.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-gelu.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-gelu.cc > CMakeFiles/test-all.dir/test/test-op-gelu.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-gelu.cc > CMakeFiles/test-all.dir/test/test-op-gelu.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-gelu.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-gelu.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-gelu.cc -o CMakeFiles/test-all.dir/test/test-op-gelu.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-gelu.cc -o CMakeFiles/test-all.dir/test/test-op-gelu.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-gelu.cc.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/test-all.dir/test/test-op-gelu.cc.o.provides.build: CMakeFiles/test-a
 
 CMakeFiles/test-all.dir/test/test-op-gru.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-gru.cc.o: ../test/test-op-gru.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test-all.dir/test/test-op-gru.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-gru.cc.o -c /pycharm-projects/light-nn/test/test-op-gru.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test-all.dir/test/test-op-gru.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-gru.cc.o -c /volume/light-nn/test/test-op-gru.cc
 
 CMakeFiles/test-all.dir/test/test-op-gru.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-gru.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-gru.cc > CMakeFiles/test-all.dir/test/test-op-gru.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-gru.cc > CMakeFiles/test-all.dir/test/test-op-gru.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-gru.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-gru.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-gru.cc -o CMakeFiles/test-all.dir/test/test-op-gru.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-gru.cc -o CMakeFiles/test-all.dir/test/test-op-gru.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-gru.cc.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/test-all.dir/test/test-op-gru.cc.o.provides.build: CMakeFiles/test-al
 
 CMakeFiles/test-all.dir/test/test-op-linear.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-linear.cc.o: ../test/test-op-linear.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test-all.dir/test/test-op-linear.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-linear.cc.o -c /pycharm-projects/light-nn/test/test-op-linear.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test-all.dir/test/test-op-linear.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-linear.cc.o -c /volume/light-nn/test/test-op-linear.cc
 
 CMakeFiles/test-all.dir/test/test-op-linear.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-linear.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-linear.cc > CMakeFiles/test-all.dir/test/test-op-linear.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-linear.cc > CMakeFiles/test-all.dir/test/test-op-linear.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-linear.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-linear.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-linear.cc -o CMakeFiles/test-all.dir/test/test-op-linear.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-linear.cc -o CMakeFiles/test-all.dir/test/test-op-linear.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-linear.cc.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/test-all.dir/test/test-op-linear.cc.o.provides.build: CMakeFiles/test
 
 CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o: ../test/test-op-lookup-table.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o -c /pycharm-projects/light-nn/test/test-op-lookup-table.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o -c /volume/light-nn/test/test-op-lookup-table.cc
 
 CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-lookup-table.cc > CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-lookup-table.cc > CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-lookup-table.cc -o CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-lookup-table.cc -o CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/test-all.dir/test/test-op-lookup-table.cc.o.provides.build: CMakeFile
 
 CMakeFiles/test-all.dir/test/test-op-lstm.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-lstm.cc.o: ../test/test-op-lstm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test-all.dir/test/test-op-lstm.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-lstm.cc.o -c /pycharm-projects/light-nn/test/test-op-lstm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test-all.dir/test/test-op-lstm.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-lstm.cc.o -c /volume/light-nn/test/test-op-lstm.cc
 
 CMakeFiles/test-all.dir/test/test-op-lstm.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-lstm.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-lstm.cc > CMakeFiles/test-all.dir/test/test-op-lstm.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-lstm.cc > CMakeFiles/test-all.dir/test/test-op-lstm.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-lstm.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-lstm.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-lstm.cc -o CMakeFiles/test-all.dir/test/test-op-lstm.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-lstm.cc -o CMakeFiles/test-all.dir/test/test-op-lstm.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-lstm.cc.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/test-all.dir/test/test-op-lstm.cc.o.provides.build: CMakeFiles/test-a
 
 CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o: ../test/test-op-pooling1d.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o -c /pycharm-projects/light-nn/test/test-op-pooling1d.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o -c /volume/light-nn/test/test-op-pooling1d.cc
 
 CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-pooling1d.cc > CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-pooling1d.cc > CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-pooling1d.cc -o CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-pooling1d.cc -o CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/test-all.dir/test/test-op-pooling1d.cc.o.provides.build: CMakeFiles/t
 
 CMakeFiles/test-all.dir/test/test-op-reduction.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-reduction.cc.o: ../test/test-op-reduction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test-all.dir/test/test-op-reduction.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-reduction.cc.o -c /pycharm-projects/light-nn/test/test-op-reduction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test-all.dir/test/test-op-reduction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-reduction.cc.o -c /volume/light-nn/test/test-op-reduction.cc
 
 CMakeFiles/test-all.dir/test/test-op-reduction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-reduction.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-reduction.cc > CMakeFiles/test-all.dir/test/test-op-reduction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-reduction.cc > CMakeFiles/test-all.dir/test/test-op-reduction.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-reduction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-reduction.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-reduction.cc -o CMakeFiles/test-all.dir/test/test-op-reduction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-reduction.cc -o CMakeFiles/test-all.dir/test/test-op-reduction.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-reduction.cc.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/test-all.dir/test/test-op-reduction.cc.o.provides.build: CMakeFiles/t
 
 CMakeFiles/test-all.dir/test/test-op-relu.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-relu.cc.o: ../test/test-op-relu.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test-all.dir/test/test-op-relu.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-relu.cc.o -c /pycharm-projects/light-nn/test/test-op-relu.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test-all.dir/test/test-op-relu.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-relu.cc.o -c /volume/light-nn/test/test-op-relu.cc
 
 CMakeFiles/test-all.dir/test/test-op-relu.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-relu.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-relu.cc > CMakeFiles/test-all.dir/test/test-op-relu.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-relu.cc > CMakeFiles/test-all.dir/test/test-op-relu.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-relu.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-relu.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-relu.cc -o CMakeFiles/test-all.dir/test/test-op-relu.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-relu.cc -o CMakeFiles/test-all.dir/test/test-op-relu.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-relu.cc.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/test-all.dir/test/test-op-relu.cc.o.provides.build: CMakeFiles/test-a
 
 CMakeFiles/test-all.dir/test/test-op-reverse.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-reverse.cc.o: ../test/test-op-reverse.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test-all.dir/test/test-op-reverse.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-reverse.cc.o -c /pycharm-projects/light-nn/test/test-op-reverse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test-all.dir/test/test-op-reverse.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-reverse.cc.o -c /volume/light-nn/test/test-op-reverse.cc
 
 CMakeFiles/test-all.dir/test/test-op-reverse.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-reverse.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-reverse.cc > CMakeFiles/test-all.dir/test/test-op-reverse.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-reverse.cc > CMakeFiles/test-all.dir/test/test-op-reverse.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-reverse.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-reverse.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-reverse.cc -o CMakeFiles/test-all.dir/test/test-op-reverse.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-reverse.cc -o CMakeFiles/test-all.dir/test/test-op-reverse.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-reverse.cc.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/test-all.dir/test/test-op-reverse.cc.o.provides.build: CMakeFiles/tes
 
 CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o: ../test/test-op-rnn-adapter.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o -c /pycharm-projects/light-nn/test/test-op-rnn-adapter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o -c /volume/light-nn/test/test-op-rnn-adapter.cc
 
 CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-rnn-adapter.cc > CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-rnn-adapter.cc > CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-rnn-adapter.cc -o CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-rnn-adapter.cc -o CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/test-all.dir/test/test-op-rnn-adapter.cc.o.provides.build: CMakeFiles
 
 CMakeFiles/test-all.dir/test/test-op-scale.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-scale.cc.o: ../test/test-op-scale.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test-all.dir/test/test-op-scale.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-scale.cc.o -c /pycharm-projects/light-nn/test/test-op-scale.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test-all.dir/test/test-op-scale.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-scale.cc.o -c /volume/light-nn/test/test-op-scale.cc
 
 CMakeFiles/test-all.dir/test/test-op-scale.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-scale.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-scale.cc > CMakeFiles/test-all.dir/test/test-op-scale.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-scale.cc > CMakeFiles/test-all.dir/test/test-op-scale.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-scale.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-scale.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-scale.cc -o CMakeFiles/test-all.dir/test/test-op-scale.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-scale.cc -o CMakeFiles/test-all.dir/test/test-op-scale.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-scale.cc.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/test-all.dir/test/test-op-scale.cc.o.provides.build: CMakeFiles/test-
 
 CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o: ../test/test-op-sigmoid.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o -c /pycharm-projects/light-nn/test/test-op-sigmoid.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o -c /volume/light-nn/test/test-op-sigmoid.cc
 
 CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-sigmoid.cc > CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-sigmoid.cc > CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-sigmoid.cc -o CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-sigmoid.cc -o CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/test-all.dir/test/test-op-sigmoid.cc.o.provides.build: CMakeFiles/tes
 
 CMakeFiles/test-all.dir/test/test-op-softmax.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-softmax.cc.o: ../test/test-op-softmax.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/test-all.dir/test/test-op-softmax.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-softmax.cc.o -c /pycharm-projects/light-nn/test/test-op-softmax.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/test-all.dir/test/test-op-softmax.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-softmax.cc.o -c /volume/light-nn/test/test-op-softmax.cc
 
 CMakeFiles/test-all.dir/test/test-op-softmax.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-softmax.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-softmax.cc > CMakeFiles/test-all.dir/test/test-op-softmax.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-softmax.cc > CMakeFiles/test-all.dir/test/test-op-softmax.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-softmax.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-softmax.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-softmax.cc -o CMakeFiles/test-all.dir/test/test-op-softmax.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-softmax.cc -o CMakeFiles/test-all.dir/test/test-op-softmax.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-softmax.cc.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/test-all.dir/test/test-op-softmax.cc.o.provides.build: CMakeFiles/tes
 
 CMakeFiles/test-all.dir/test/test-op-tanh.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-tanh.cc.o: ../test/test-op-tanh.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/test-all.dir/test/test-op-tanh.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-tanh.cc.o -c /pycharm-projects/light-nn/test/test-op-tanh.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/test-all.dir/test/test-op-tanh.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-tanh.cc.o -c /volume/light-nn/test/test-op-tanh.cc
 
 CMakeFiles/test-all.dir/test/test-op-tanh.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-tanh.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-tanh.cc > CMakeFiles/test-all.dir/test/test-op-tanh.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-tanh.cc > CMakeFiles/test-all.dir/test/test-op-tanh.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-tanh.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-tanh.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-tanh.cc -o CMakeFiles/test-all.dir/test/test-op-tanh.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-tanh.cc -o CMakeFiles/test-all.dir/test/test-op-tanh.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-tanh.cc.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/test-all.dir/test/test-op-tanh.cc.o.provides.build: CMakeFiles/test-a
 
 CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o: ../test/test-op-weight-wrapper.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o -c /pycharm-projects/light-nn/test/test-op-weight-wrapper.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o -c /volume/light-nn/test/test-op-weight-wrapper.cc
 
 CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-weight-wrapper.cc > CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-weight-wrapper.cc > CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-weight-wrapper.cc -o CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-weight-wrapper.cc -o CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/test-all.dir/test/test-op-weight-wrapper.cc.o.provides.build: CMakeFi
 
 CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o: ../test/test-op-weighted-sum.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o -c /pycharm-projects/light-nn/test/test-op-weighted-sum.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o -c /volume/light-nn/test/test-op-weighted-sum.cc
 
 CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-op-weighted-sum.cc > CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-op-weighted-sum.cc > CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.i
 
 CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-op-weighted-sum.cc -o CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-op-weighted-sum.cc -o CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.s
 
 CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/test-all.dir/test/test-op-weighted-sum.cc.o.provides.build: CMakeFile
 
 CMakeFiles/test-all.dir/test/test-tensor.cc.o: CMakeFiles/test-all.dir/flags.make
 CMakeFiles/test-all.dir/test/test-tensor.cc.o: ../test/test-tensor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/test-all.dir/test/test-tensor.cc.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-tensor.cc.o -c /pycharm-projects/light-nn/test/test-tensor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/test-all.dir/test/test-tensor.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-all.dir/test/test-tensor.cc.o -c /volume/light-nn/test/test-tensor.cc
 
 CMakeFiles/test-all.dir/test/test-tensor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-all.dir/test/test-tensor.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /pycharm-projects/light-nn/test/test-tensor.cc > CMakeFiles/test-all.dir/test/test-tensor.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /volume/light-nn/test/test-tensor.cc > CMakeFiles/test-all.dir/test/test-tensor.cc.i
 
 CMakeFiles/test-all.dir/test/test-tensor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-all.dir/test/test-tensor.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /pycharm-projects/light-nn/test/test-tensor.cc -o CMakeFiles/test-all.dir/test/test-tensor.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /volume/light-nn/test/test-tensor.cc -o CMakeFiles/test-all.dir/test/test-tensor.cc.s
 
 CMakeFiles/test-all.dir/test/test-tensor.cc.o.requires:
 
@@ -716,9 +716,9 @@ test/test-all: CMakeFiles/test-all.dir/test/test-tensor.cc.o
 test/test-all: CMakeFiles/test-all.dir/build.make
 test/test-all: lib/libgtest.a
 test/test-all: lib/liblnn.a
-test/test-all: lib/libopenblas.a
+test/test-all: lib/openblas.lib
 test/test-all: CMakeFiles/test-all.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/pycharm-projects/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable test/test-all"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/volume/light-nn/build1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable test/test-all"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-all.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -759,6 +759,6 @@ CMakeFiles/test-all.dir/clean:
 .PHONY : CMakeFiles/test-all.dir/clean
 
 CMakeFiles/test-all.dir/depend:
-	cd /pycharm-projects/light-nn/build1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /pycharm-projects/light-nn /pycharm-projects/light-nn /pycharm-projects/light-nn/build1 /pycharm-projects/light-nn/build1 /pycharm-projects/light-nn/build1/CMakeFiles/test-all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /volume/light-nn/build1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /volume/light-nn /volume/light-nn /volume/light-nn/build1 /volume/light-nn/build1 /volume/light-nn/build1/CMakeFiles/test-all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test-all.dir/depend
 
