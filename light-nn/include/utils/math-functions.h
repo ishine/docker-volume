@@ -76,6 +76,7 @@ void lnn_tanh(const int n, const float* x, float* y);
 
 void lnn_relu(const int n, const float* x, float* y);
 
+void lnn_leakyrelu(const int n, const float* x, float* y);
 void lnn_gelu(const int n, const float* x, float* y,
               const float mean, const float deviation);
 

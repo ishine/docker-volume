@@ -9,25 +9,6 @@
 #include "operator-factory.h"
 #include "json/json.h"
 
-char* GetChar(const char* strInput)
-{
-	char* ReturnChar = new char[32];
-
-	for (int i = 0; i < 32; i++)
-	{
-		if (strInput[i*2] + strInput[i*2 + 1] > 0)
-		{
-			ReturnChar[i] = strInput[i * 2] + strInput[i * 2 + 1];
-		}
-		else
-		{
-			ReturnChar[i] = 0;
-		}
-	}
-
-	return ReturnChar;
-}
-
 
 namespace lnn {
 
@@ -131,7 +112,7 @@ bool Net::load(const char *model_file, const char *weight_file, const char *dir)
 //  LOG(INFO) << "weight_tensor_name" << std::endl;
   for (uint16_t i = 0; i < num_weight_tensor; ++i) {
 	  //tensor name = 32 ×Ö½Ú
-    std::string tensor_name = std::string(cursor + i * 32, 32);
+    std::string tensor_name = std::string(cursor + i * 64, 64);
     // use 'c_str()' to strip multiple terminator if possible
 	//char* strtemp = GetChar(tensor_name.c_str());
     //m_weight_tensor_name[i] = strtemp;
@@ -139,7 +120,7 @@ bool Net::load(const char *model_file, const char *weight_file, const char *dir)
     m_weight_tensor_name2id.insert(std::make_pair(tensor_name.c_str(), i));
 //    LOG(INFO) << m_weight_tensor_name[i] << std::endl;
   }
-  cursor += num_weight_tensor * 32;
+  cursor += num_weight_tensor * 64;
   std::vector<size_t> weight_tensor_size(num_weight_tensor);
   std::vector<size_t> weight_tensor_offset(num_weight_tensor);//weight_tensor_offset py3.6=0,py2.7=
 //  LOG(INFO) << "weight_tensor_size" << std::endl;

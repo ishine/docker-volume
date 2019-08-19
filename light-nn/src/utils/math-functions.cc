@@ -217,6 +217,15 @@ void lnn_relu(const int n, const float* x, float* y) {
   }
 }
 
+
+void lnn_leakyrelu(const int n, const float* x, float* y) {
+#ifdef USE_OPENMP
+#pragma omp parallel for
+#endif  // USE_OPENMP
+	for (int i = 0; i < n; ++i) {
+		y[i] = (x[i] > 0. ? x[i] : 0.01*x[i]);
+	}
+}
 void lnn_gelu(const int n, const float* x, float* y,
               const float mean, const float deviation) {
 #ifdef USE_OPENMP

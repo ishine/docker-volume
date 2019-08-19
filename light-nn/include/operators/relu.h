@@ -1,7 +1,7 @@
-// Copyright (c) 2017, Tencent Inc.
+// Copyright (c) 2019, Aopti Inc.
 // All Rights Reserved
 //
-// Author: Wenfeng Xuan <johnxuan@tencent.com>
+// Author: JunFeng Liu <johnxuan@tencent.com>
 //
 #ifndef LNN_OPERATORS_RELU_H_
 #define LNN_OPERATORS_RELU_H_
