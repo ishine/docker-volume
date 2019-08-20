@@ -93,13 +93,30 @@ const std::vector<Tensor *> & Executor::execute(
     for (size_t j = 0; j < output_ids[i].size(); ++j) {
       op_output[j] = &(m_dynamic_tensors[output_ids[i][j]]);
     }
+	std::cout << m_operators[i] << std::endl;
     if (! m_operators[i]->forward(op_input, op_output)) {
+		//for (size_t c = 0; c < op_input[0]->shape(0); ++c) {
+		//	for (size_t i = 0; i < op_input[0]->shape(1); i++)
+		//	{
+		//		for (size_t j = 0; j < op_input[0]->shape(2); j++)
+		//		{
+		//			std::cout << std::fixed << std::setprecision(4)
+		//				<< op_input[0]->data()[c*op_input[0]->shape(1)*op_input[0]->shape(2) + i * op_input[0]->shape(2) + j] << ',';
+		//		}
+		//		std::cout << std::endl;
+		//	}
+		//	std::cout << std::endl;
+		//}
+		//std::cout << std::endl;
+		std::cout << op_input[0]->num_axes() << std::endl;
+		std::cout << op_input[0]->name() << std::endl;
+		std::cout << op_output[0]->name() << std::endl;
 	  LOG(INFO) << "forward failed!" << std::endl;
       success = false;
       break;  
     }
 	//reshape
-	if (i = m_operators.size() - 2)
+	if (i == (m_operators.size() - 1))
 	{
 		std::vector<size_t>shape;
 		shape.push_back(1);

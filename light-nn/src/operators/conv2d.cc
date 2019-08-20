@@ -152,9 +152,9 @@ namespace lnn {
 		tensor_name.push_back(m_name + ".weight");
 		tensor_size.push_back(m_output_size * m_kernel_size *m_kernel_size* m_input_size);
 		shape.push_back(m_output_size);
-		shape.push_back(m_kernel_size);
-		shape.push_back(m_kernel_size);
 		shape.push_back(m_input_size);
+		shape.push_back(m_kernel_size);
+		shape.push_back(m_kernel_size);
 		tensor_shape.push_back(shape);
 		if (b_bias) {
 			m_weights.resize(2);
@@ -180,6 +180,11 @@ namespace lnn {
 		}
 		// set weight tensor's shape
 		for (size_t i = 0; i < tensor_name.size(); ++i) {
+			std::cout << "µ±Ç°µÄtensor name:" << tensor_name[i] << std::endl;
+			for (size_t j = 0; j < tensor_shape[i].size(); j++)
+			{
+				std::cout << tensor_shape[i][j] << std::endl;
+			}
 			m_weights[i]->set_shape(tensor_shape[i]);
 		}
 		return true;
