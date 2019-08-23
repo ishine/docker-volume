@@ -5,7 +5,44 @@
 
 namespace lnn {
 
-	float * convert_x(const float *A, float *A_convert, const int outM, const int in_channels, int Map, int Kernel)
+	//float * convert_x(const float *A, float *A_convert, const int outM, const int in_channels, int Map, int Kernel)
+	//{//转换被卷积矩阵 这里根据步长和kernel_size大小进行转换
+	//	//定义被卷积矩阵宽高
+	//	const int convAw = Kernel * Kernel * in_channels;
+	//	const int convAh = outM * outM;
+	//	//float A_convert[convh*convAw] = { 0 };
+	//	for (int i = 0; i < outM; i++)
+	//	{
+	//		for (int j = 0; j < outM; j++)
+	//		{
+	//			int wh = i * outM * convAw + j * convAw;
+	//			for (size_t k = 0; k < in_channels; k++)
+	//			{
+	//				//int wh = k * outM * outM *convAw+ i * outM * convAw + j * convAw;
+
+	//				int col1 = k * Map * Map + i * Map + j; //一个k跨过map*map个元素，三维先拉伸成二维，再拉伸成一维
+	//				for (size_t m = 0; m < Kernel; m++)
+	//				{
+	//					A_convert[wh+m] = A[col1+m];
+	//				}
+
+	//				int col2 = k * Map * Map + (i + 1) * Map + j;
+	//				A_convert[wh + 3] = A[col2];
+	//				A_convert[wh + 4] = A[col2 + 1];
+	//				A_convert[wh + 5] = A[col2 + 2];
+
+	//				int col3 = k * Map * Map + (i + 2) * Map + j;
+	//				A_convert[wh + 6] = A[col3];
+	//				A_convert[wh + 7] = A[col3 + 1];
+	//				A_convert[wh + 8] = A[col3 + 2];
+	//				wh += Kernel * Kernel;
+	//			}
+	//		}
+	//	}
+
+	//	return A_convert;
+	//}
+	float * convert_x(const float *A, float *A_convert, const int outM, const int in_channels, const int Map, const int Kernel, const int stride)
 	{//转换被卷积矩阵 这里根据步长和kernel_size大小进行转换
 		//定义被卷积矩阵宽高
 		const int convAw = Kernel * Kernel * in_channels;
@@ -16,30 +53,61 @@ namespace lnn {
 			for (int j = 0; j < outM; j++)
 			{
 				int wh = i * outM * convAw + j * convAw;
+
+				//k是channels移动，i是行移动，j是列移动
+				//stride体现在取值得过程中,取值的起始点
+				int col = (i*stride*Map + j * stride);
+				//将原图拉升成一维，填入到三维转换图中
 				for (size_t k = 0; k < in_channels; k++)
 				{
-					//int wh = k * outM * outM *convAw+ i * outM * convAw + j * convAw;
+					col += (k * Map*Map);
+					//适应不同大小的kernel_size
+					int id = 0;
+					for (size_t m = 0; m < Kernel; m++)
+					{
+						col += (m*Map);
+						//col += Map;
+						for (size_t n = 0; n < Kernel; n++)
+						{
+							A_convert[wh + id] = A[col + n];
+							/*cout << "第" << i << "行";
+							cout << "第" << j << "行";
+							cout << "起始点下标" << col;
+							cout << "第"<<(k+1)*(id+1)<<"个元素"<<A[col + n] << endl;*/
+							id++;
+						}
+						//复位
+						col -= (m*Map);
+					}
+					//复位
+					col -= (k * Map*Map);
 
-					int col1 = k * Map * Map + i * Map + j; //一个k跨过map*map个元素，三维先拉伸成二维，再拉伸成一维
-					A_convert[wh] = A[col1];
-					A_convert[wh + 1] = A[col1 + 1];
-					A_convert[wh + 2] = A[col1 + 2];
-
-					int col2 = k * Map * Map + (i + 1) * Map + j;
-					A_convert[wh + 3] = A[col2];
-					A_convert[wh + 4] = A[col2 + 1];
-					A_convert[wh + 5] = A[col2 + 2];
-
-					int col3 = k * Map * Map + (i + 2) * Map + j;
-					A_convert[wh + 6] = A[col3];
-					A_convert[wh + 7] = A[col3 + 1];
-					A_convert[wh + 8] = A[col3 + 2];
 					wh += Kernel * Kernel;
 				}
 			}
 		}
 
 		return A_convert;
+	}
+	void padding_x(const float *A, float *new_A, const int padding, const int height, const int width, const int in_channels)
+	{
+		const int new_width = width + padding * 2;
+		const int new_height = height + padding * 2;
+		for (size_t c = 0; c < in_channels; c++)
+		{
+			size_t start = c * new_width*new_height;
+			//遍历原数组中的元素添加到新数组中
+			for (size_t i = 0; i < height; i++)
+			{
+				start += (i + padding) * new_width + padding;//每一个通道特征图的起始点
+				for (size_t j = 0; j < width; j++)
+				{
+					new_A[start + j] = A[c*height*width + i*width + j];
+				}
+				//复位
+				start -= (i + padding) * new_width + padding;
+			}
+		}
 	}
 	Conv2D::Conv2D(const Json::Value &config) : Operator(config) {
 		m_name = config["name"].asString();
@@ -84,8 +152,9 @@ namespace lnn {
 		tensor_name.push_back(m_name + ".weight");
 		tensor_size.push_back(m_output_size * m_kernel_size *m_kernel_size* m_input_size);
 		shape.push_back(m_output_size);
-		shape.push_back(m_kernel_size);
 		shape.push_back(m_input_size);
+		shape.push_back(m_kernel_size);
+		shape.push_back(m_kernel_size);
 		tensor_shape.push_back(shape);
 		if (b_bias) {
 			m_weights.resize(2);
@@ -111,6 +180,11 @@ namespace lnn {
 		}
 		// set weight tensor's shape
 		for (size_t i = 0; i < tensor_name.size(); ++i) {
+			std::cout << "当前的tensor name:" << tensor_name[i] << std::endl;
+			for (size_t j = 0; j < tensor_shape[i].size(); j++)
+			{
+				std::cout << tensor_shape[i][j] << std::endl;
+			}
 			m_weights[i]->set_shape(tensor_shape[i]);
 		}
 		return true;
@@ -136,22 +210,44 @@ namespace lnn {
 		const int out_h = (input[0]->shape(2) + 2 * m_padding - m_dilation * (m_kernel_size - 1) - 1) / m_stride + 1;
 
 		shape.push_back(m_output_size);
-		if (b_bias) {
-			m_bias_multiplier.realloc(shape);
-			lnn_set(shape[0], 1., m_bias_multiplier.data());
-		}
 		shape.push_back(out_w);
 		shape.push_back(out_h);
-
 		output[0]->realloc(shape);
 		if (m_padding > 0) {
 			shape = input[0]->shape();
-			shape[0] += 2 * m_padding;
+			const size_t new_w = input[0]->shape(1) + m_padding * 2;
+			const size_t new_h = input[0]->shape(2) + m_padding * 2;
+			shape[1] += 2 * m_padding;
+			shape[2] += 2 * m_padding;
 			m_buf.realloc(shape);
-			lnn_set(m_padding*m_input_size, 0., m_buf.data());
-			lnn_copy(input[0]->size(), input[0]->data(), m_buf.data() + m_padding * m_input_size);
-			lnn_set(m_padding*m_input_size, 0., m_buf.data() + m_padding * m_input_size + input[0]->size());
+			lnn_set(shape[1] * shape[2] * m_input_size, 0., m_buf.data()); //m_buf初始化为0矩阵
+			//float *new_A = new float[m_input_size*new_h*new_h]();
+
+			padding_x(input[0]->data(), m_buf.data(), m_padding, input[0]->shape(1), input[0]->shape(2), m_input_size);
+
+			//验证padding
+			/*for (size_t i = 0; i < m_input_size; i++)
+			{
+				for (size_t j = 0; j < new_w; j++)
+				{
+					for (size_t k = 0; k < new_h; k++)
+					{
+						std::cout << m_buf.data()[i*new_w*new_h + j * new_h + k] << ",";
+					}
+					std::cout << std::endl;
+				}
+				std::cout << std::endl;
+			}*/
 		}
+		
+		if (b_bias) {
+			std::vector<size_t> t_shape;
+			t_shape.push_back(out_w);
+			t_shape.push_back(out_h);
+			m_bias_multiplier.realloc(t_shape);
+			lnn_set(t_shape[0]* t_shape[1], 1., m_bias_multiplier.data());
+		}
+		
 		if (m_dilation > 1) {
 			shape.resize(1);
 			shape[0] = m_kernel_size * m_input_size;
@@ -163,35 +259,65 @@ namespace lnn {
 	void Conv2D::forward_impl(const std::vector<Tensor *> &input,
 		std::vector<Tensor *> &output) {
 		size_t Map = input[0]->shape(1);
+		//计算卷积输出矩阵宽高
 		size_t outM = (Map + 2 * m_padding - m_dilation * (m_kernel_size - 1) - 1) / m_stride + 1;
 		if (b_bias) {
-			lnn_gemm(CblasNoTrans, CblasNoTrans, outM, m_output_size, 1,
-				1., m_bias_multiplier.data(), m_weights[1]->data(), 0., output[0]->data());
+			lnn_gemm(CblasNoTrans, CblasNoTrans, m_output_size,outM*outM,  1,
+				1., m_weights[1]->data(), m_bias_multiplier.data(), 0., output[0]->data());
 		}
 		else {
 			lnn_set(output[0]->size(), 0., output[0]->data());
 		}
+
+	/*	std::cout << "矩阵计算后bias 的长度：" << output[0]->size() << "\t";
+		for (size_t i = 0; i < output[0]->size(); i++)
+		{
+			std::cout << output[0]->data()[i] << "  ";
+		}*/
+		std::cout << std::endl;
 		const float* data = input[0]->data();
 		//1.将input进行padding
-		if (m_padding > 0) data = m_buf.data();
+		if (m_padding > 0)
+		{
+			data = m_buf.data();
+			Map = m_buf.shape(1);
+		}
 		//2.将input进行convert(根据stride转换成对应的矩阵)
-		//计算卷积输出矩阵宽高
-		/*const int outM = Map - m_kernel_size + 1;*/
 
+		//验证padding
+		LOG(INFO) << "conv2d padding" << std::endl;
+		//for (size_t i = 0; i < m_input_size; i++)
+		//{
+		//	for (size_t j = 0; j < Map; j++)
+		//	{
+		//		for (size_t k = 0; k < Map; k++)
+		//		{
+		//			std::cout << data[i*Map*Map + j * Map + k] << ",";
+		//		}
+		//		std::cout << std::endl;
+		//	}
+		//	//break;
+		//	std::cout << std::endl;
+		//}
 		//定义被卷积矩阵宽高
 		const int convAw = m_kernel_size * m_kernel_size * m_input_size;
 		const int convAh = outM * outM;
 
 		float * a_convert = new float[convAh*convAw];
-		float *A_convert = convert_x(data, a_convert, outM, m_input_size, Map, m_kernel_size);
+		float *A_convert = convert_x(data, a_convert, outM, m_input_size, Map, m_kernel_size, m_stride);
 		//3.cblas_gemm进行矩阵计算
-		//for (size_t i = 0; i < convAh*convAw / 3; i++)
+		LOG(INFO) << "conv2d convert matrix" << std::endl;
+		//for (size_t i = 0; i < convAh*convAw / m_input_size; i++)
 		//{
-		//	for (size_t j = 0; j < 3; j++)
+		//	for (size_t j = 0; j < m_input_size; j++)
 		//	{
-		//		int k = i * 3 + j;
+		//		int k = i * m_input_size + j;
 		//		std::cout << A_convert[k];
 		//	}
+		//	/*if (i > m_kernel_size*m_kernel_size*m_input_size)
+		//	{
+		//		break;
+		//	}*/
 		//	std::cout << std::endl;
 		//}
 
@@ -207,7 +333,7 @@ namespace lnn {
 			const int m, const int n, const int k, const float alpha,
 			const float* a, const float* b, const float beta, float* c*/
 		//cblas_sgemm(Order, TransA, TransB, m_output_size, N, K, alpha, m_weights[0]->data(), lda, A_convert, ldb, beta, output[0]->data(), ldc);
-		lnn_gemm(CblasNoTrans, CblasTrans,m_output_size, convAh, convAw,1.0,a,b ,0.0, output[0]->data());
+		lnn_gemm(CblasNoTrans, CblasTrans,m_output_size, convAh, convAw,1.0,a,b ,1.0, output[0]->data());
 
 		delete[] a_convert;
 		std::cout << sizeof(output[0]->data()) / sizeof(output[0]->data()[0]) << std::endl;

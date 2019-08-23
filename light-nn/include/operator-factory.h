@@ -14,6 +14,7 @@
 #include "operators/concat.h"
 #include "operators/conv1d.h"
 #include "operators/conv2d.h"
+#include "operators/batchnorm2d.h"
 #include "operators/crf.h"
 #include "operators/eltwise.h"
 #include "operators/embedding.h"
@@ -23,8 +24,11 @@
 #include "operators/lookup-table.h"
 #include "operators/lstm.h"
 #include "operators/pooling1d.h"
+#include "operators/pooling2d.h"
 #include "operators/reduction.h"
+#include "operators/residual.h"
 #include "operators/relu.h"
+#include "operators/leakyrelu.h"
 #include "operators/reverse.h"
 #include "operators/rnn-adapter.h"
 #include "operators/scale.h"
@@ -41,6 +45,7 @@ static const char * g_op_types[] = {
   "Concat",
   "Conv1D",
   "Conv2D",
+  "BatchNorm2D",
   "CRF",
   "Eltwise",
   "Embedding",
@@ -50,8 +55,11 @@ static const char * g_op_types[] = {
   "LookupTable",
   "LSTM",
   "Pooling1D",
+  "Pooling2D",
   "Reduction",
+  "Residual",
   "ReLU",
+  "LeakyReLU",
   "Reverse",
   "RNNAdapter",
   "Scale",
@@ -78,6 +86,8 @@ inline void get_operator(const std::string &type, const Json::Value &config, Ope
     op = new Conv1D(config);
   }else if ("Conv2D" == type) {
 	op = new Conv2D(config);
+  }else if ("BatchNorm2D" == type) {
+	op = new BatchNorm2D(config);
   } else if ("CRF" == type) {
     op = new CRF(config);
   } else if ("Eltwise" == type) {
@@ -96,10 +106,16 @@ inline void get_operator(const std::string &type, const Json::Value &config, Ope
     op = new LSTM(config);
   } else if ("Pooling1D" == type) {
     op = new Pooling1D(config);
+  }else if ("Pooling2D" == type) {
+	op = new Pooling2D(config);
+  }else if ("Residual" == type) {
+	op = new Residual(config);
   } else if ("Reduction" == type) {
     op = new Reduction(config);
   } else if ("ReLU" == type) {
     op = new ReLU(config);
+  }else if ("LeakyReLU" == type) {
+	op = new LeakyReLU(config);
   } else if ("Reverse" == type) {
     op = new Reverse(config);
   } else if ("RNNAdapter" == type) {

@@ -82,6 +82,8 @@ const std::vector<Tensor *> & Executor::execute(
   const std::vector<std::vector<size_t> > &input_ids = m_net->op_input_ids();
   const std::vector<std::vector<size_t> > &output_ids = m_net->op_output_ids();
   std::vector<Tensor *> op_input, op_output; //存放的tensor类的tensor
+  //这里查看网络的op向前传播的过程，单个op的shape，size
+  //填充op_output的数量，具体每个op的shape和size在reshape中realloc
   for (size_t i = 0; i < m_operators.size(); ++i) {
     op_input.resize(input_ids[i].size());
     for (size_t j = 0; j < input_ids[i].size(); ++j) {
@@ -91,11 +93,64 @@ const std::vector<Tensor *> & Executor::execute(
     for (size_t j = 0; j < output_ids[i].size(); ++j) {
       op_output[j] = &(m_dynamic_tensors[output_ids[i][j]]);
     }
+	std::cout << m_operators[i] << std::endl;
     if (! m_operators[i]->forward(op_input, op_output)) {
+		//for (size_t c = 0; c < op_input[0]->shape(0); ++c) {
+		//	for (size_t i = 0; i < op_input[0]->shape(1); i++)
+		//	{
+		//		for (size_t j = 0; j < op_input[0]->shape(2); j++)
+		//		{
+		//			std::cout << std::fixed << std::setprecision(4)
+		//				<< op_input[0]->data()[c*op_input[0]->shape(1)*op_input[0]->shape(2) + i * op_input[0]->shape(2) + j] << ',';
+		//		}
+		//		std::cout << std::endl;
+		//	}
+		//	std::cout << std::endl;
+		//}
+		//std::cout << std::endl;
+		std::cout << op_input[0]->num_axes() << std::endl;
+		std::cout << op_input[0]->name() << std::endl;
+		std::cout << op_output[0]->name() << std::endl;
 	  LOG(INFO) << "forward failed!" << std::endl;
       success = false;
-      break;
+      break;  
     }
+	//reshape
+	if (i == (m_operators.size() - 1))
+	{
+		std::vector<size_t>shape;
+		shape.push_back(1);
+		shape.push_back(op_output[0]->shape(0)*op_output[0]->shape(1)*op_output[0]->shape(2));
+		op_output[0]->realloc(shape);
+	}
+
+	//输出每一层的结果，便于检查
+	for (size_t n = 0; n < output_ids[i].size(); n++)
+	{
+		LOG(INFO) <<"第"<<i<<"层"<<"第"<<n<<"特征图输出："<< op_output[n]->name()<<":\t";
+		for (size_t m = 0; m < op_output[n]->shape().size(); m++)
+		{
+			std::cout << op_output[n]->shape(m) << "  ";
+		}
+	}
+	std::cout << std::endl;
+	//输出每一层特征图的值，进行对比
+	/*for (size_t n = 0; n < output_ids[i].size(); n++)
+	{
+		for (size_t c = 0; c < op_output[n]->shape(0); ++c) {
+			for (size_t w = 0; w < op_output[n]->shape(1); w++)
+			{
+				for (size_t h = 0; h < op_output[n]->shape(2); h++)
+				{
+					std::cout << std::fixed << std::setprecision(4)
+						<< op_output[n]->data()[c*op_output[n]->shape(1)*op_output[n]->shape(2) + w * op_output[n]->shape(2) + h] << ',';
+				}
+				std::cout << std::endl;
+			}
+			std::cout << std::endl;
+		}
+	}
+	std::cout << std::endl;*/
   }
   return m_output_tensors;
 }

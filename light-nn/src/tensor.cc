@@ -46,6 +46,8 @@ size_t Tensor::canonical_axis(int axis) {
   } else if (0 <= axis && static_cast<size_t>(axis) < num_axes()) {
     return axis;
   } else {  // axis >= num_axes()
+	  LOG(INFO)<<"tensor name" << m_name << std::endl;
+	  std::cout << m_shape.size() << std::endl;
     LOG(WARNING) << "Axis [" << axis << "] exceeds number of axes ["
       << num_axes() << "], set it to be axis % num_axes()!" << std::endl;
     return axis % num_axes();
